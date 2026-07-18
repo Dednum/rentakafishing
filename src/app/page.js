@@ -1,65 +1,155 @@
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import categories from "@/data/categories";
+import FeatureProduct from "@/components/FeatureProduct";
+import featureProducts from "@/data/FeatureProduct";
+import ChooseSection from "@/components/ChooseSection";
+import GallerySection from "@/components/GallerySection";
+import FishingExpert from "@/components/FishingExpert";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div
+  className="
+    flex
+    flex-col
+    min-h-screen
+    bg-fixed
+    bg-cover
+    bg-center
+  "
+  style={{
+    backgroundImage: "url('/background.jpg')"
+  }}
+>
+      <Navbar />
+      <section
+        className="
+          w-full
+          h-[630px]
+          bg-[url('/ww.png')]
+          bg-cover
+          bg-center
+          bg-no-repeat
+        "
+      />
+
+      <section className="
+  w-full
+  bg-white/90
+  backdrop-blur-sm
+  py-10
+">
+
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* product category */}
+    <div className="text-center mb-14">
+
+      <h2 className="text-4xl font-bold text-black">
+        Product Categories
+      </h2>
+
+      <p className="text-gray-500 mt-3">
+        Find the perfect equipment for your fishing adventure.
+      </p>
+
+    </div>
+
+    {/* Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      {categories.map((category) => (
+
+        <div
+          key={category.id}
+          className="
+  group
+  rounded-3xl
+  overflow-hidden
+  bg-white
+  shadow-md
+  hover:shadow-[0_20px_40px_rgba(220,38,38,0.35)]
+  hover:-translate-y-3
+  transition-all
+  duration-300
+  cursor-pointer
+"
+        >
+
+          <Image
+            src={category.image}
+            alt={category.title}
+            width={400}
+            height={300}
+            className="
+              w-full
+              h-60
+              object-cover
+              group-hover:scale-110
+              transition
+              duration-500
+            "
+          />
+
+          <div className="p-6">
+
+            <h3 className="text-2xl font-semibold text-black">
+              {category.title}
+            </h3>
+
+            <p className="text-gray-500 mt-2">
+              {category.description}
+            </p>
+
+          </div>
+
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+{/*end of product category*/}
+<section className="w-full  py-5">
+  <FeatureProduct products={featureProducts}/>
+  </section>
+
+
+
+{/*end of product feature*/}
+
+<section className="w-full bg-white py-5">
+  <ChooseSection />
+  </section>
+
+  {/*end of why choose section*/}
+
+<section className="w-full bg-black py-5" >
+  <GallerySection />
+  </section>
+
+  {/*end of gallery section*/}
+
+<section className="w-full bg-white py-5">
+  <FishingExpert />
+</section>
+
+  {/*end of rentaka specialist*/}
+
+  <section className="w-full bg-white py-5">
+  <ContactSection />
+</section>
+
+  {/*end of Contact Section*/}
+
+<Footer />
     </div>
   );
 }
