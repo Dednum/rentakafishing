@@ -21,7 +21,7 @@ export default function Home() {
     flex
     flex-col
     min-h-screen
-
+    bg-fixed
     bg-cover
     bg-center
   "

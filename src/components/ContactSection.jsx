@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import social from "@/data/social";
+
 import { 
   FaWhatsapp, 
   FaFacebookF, 
@@ -188,7 +190,7 @@ min-h-[420px]
 
   {/* Whatsapp */}
   <a
-    href="https://wa.me/60123456789"
+    href={social.whatsapp}
     target="_blank"
     rel="noopener noreferrer"
     className="
@@ -214,7 +216,7 @@ min-h-[420px]
 
   {/* Facebook */}
   <a
-    href="https://www.facebook.com/FASTackle/"
+    href={social.facebook}
     target="_blank"
     rel="noopener noreferrer"
     className="
@@ -240,7 +242,7 @@ min-h-[420px]
 
   {/* TikTok */}
   <a
-    href="https://www.tiktok.com/search?q=%23rentaka&t=1784546912522"
+    href={social.tiktok}
     target="_blank"
     rel="noopener noreferrer"
     className="
