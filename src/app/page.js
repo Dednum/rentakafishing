@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
+import Link from "next/link";
 import categories from "@/data/categories";
 import FeatureProduct from "@/components/FeatureProduct";
 import featureProducts from "@/data/FeatureProduct";
@@ -7,7 +7,12 @@ import ChooseSection from "@/components/ChooseSection";
 import GallerySection from "@/components/GallerySection";
 import FishingExpert from "@/components/FishingExpert";
 import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
+import { Anton } from "next/font/google";
+
+const anton = Anton({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Home() {
   return (
@@ -16,7 +21,7 @@ export default function Home() {
     flex
     flex-col
     min-h-screen
-    bg-fixed
+
     bg-cover
     bg-center
   "
@@ -24,17 +29,78 @@ export default function Home() {
     backgroundImage: "url('/background.jpg')"
   }}
 >
-      <Navbar />
+
       <section
-        className="
-          w-full
-          h-[630px]
-          bg-[url('/ww.png')]
-          bg-cover
-          bg-center
-          bg-no-repeat
-        "
-      />
+  className="
+    relative
+    w-full
+    h-[630px]
+    md:h-[700px]
+    bg-[url('/www.png')]
+    bg-cover
+    bg-center
+    bg-no-repeat
+    flex
+    items-center
+    justify-center
+  "
+>
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/20" />
+
+  {/* Hero Content */}
+  <div
+  className="
+    relative
+    z-10
+    flex
+    flex-col
+    items-center
+    text-center
+    px-6
+    gap-8
+  "
+>
+
+    {/* Logo */}
+    <Image
+      src="/logobulat.png"
+      alt="Rentaka Logo"
+      width={250}
+      height={250}
+      priority
+      className="
+        w-50
+        md:w-70
+        lg:w-50
+        drop-shadow-2xl
+      "
+    />
+
+    {/* Heading */}
+    <h1
+className={`${anton.className}
+text-white
+text-5xl
+font-bold
+`}
+>
+      Malaysian's Brand of High Quality Fishing Products
+    </h1>
+
+    <h2
+className={`${anton.className}
+text-white
+text-4xl
+`}
+>
+      Blended With Passion And Affordable Pricing!
+    </h2>
+
+  </div>
+
+</section>
 
       <section className="
   w-full
@@ -63,8 +129,11 @@ export default function Home() {
 
       {categories.map((category) => (
 
+<Link
+  key={category.id}
+  href={`/product/${category.slug}`}
+>
         <div
-          key={category.id}
           className="
   group
   rounded-3xl
@@ -107,7 +176,7 @@ export default function Home() {
           </div>
 
         </div>
-
+</Link>
       ))}
 
     </div>
@@ -143,13 +212,13 @@ export default function Home() {
 
   {/*end of rentaka specialist*/}
 
-  <section className="w-full bg-white py-5">
+  <section id="contact" className="w-full bg-white py-5">
   <ContactSection />
 </section>
 
   {/*end of Contact Section*/}
 
-<Footer />
+
     </div>
   );
 }

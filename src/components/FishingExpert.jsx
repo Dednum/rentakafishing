@@ -154,7 +154,7 @@ text-white
 <span
 className="
 inline-block
-bg-[#0A483D]
+bg-[#D91E18]
 px-4
 py-1
 rounded-full

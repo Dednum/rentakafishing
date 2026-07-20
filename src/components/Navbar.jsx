@@ -1,25 +1,37 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
 
+  const [open, setOpen] = useState(false);
+
+  const pathname = usePathname();
+
+  const isProductPage = pathname.startsWith("/product");
+
   const menus = [
-    {
-      name: "Home",
-      href: "#",
-    },
-    {
-      name: "Product",
-      href: "#",
-    },
-    {
-      name: "Stores",
-      href: "#",
-    },
-    {
-      name: "Contact Us",
-      href: "#",
-    },
-  ];
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Product",
+    href: "/product/rod",
+  },
+  {
+    name: "Stores",
+    href: "/stores",
+  },
+  {
+    name: "Contact Us",
+    href: "/#contact",
+  },
+];
 
   const navLink = `
     relative
@@ -44,7 +56,7 @@ export default function Navbar() {
   `;
 
   return (
-    <header className="sticky top-0 z-50 bg-black">
+    <header className=" bg-black">
 
       <nav className="
 relative 
@@ -76,16 +88,26 @@ text-xl
 ">
 
           {menus.map((menu) => (
-            <a
+            <Link
               key={menu.name}
               href={menu.href}
               className={navLink}
             >
               {menu.name}
-            </a>
+            </Link>
           ))}
 
         </div>
+
+        {/* hamburger button */}
+        {!isProductPage && (
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden text-white"
+          >
+            {open ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        )}
 
         {/* Bottom Border */}
         <div className="absolute bottom-0 left-0 w-full">
@@ -98,6 +120,32 @@ text-xl
           <div className="h-[1px] bg-white"></div>
 
         </div>
+
+        {open && (
+          <div className="md:hidden bg-black">
+
+            {menus.map((menu) => (
+              <Link
+                key={menu.name}
+                href={menu.href}
+                onClick={() => setOpen(false)}
+                className="
+                  block
+                  px-6
+                  py-4
+                  text-white
+                  border-b
+                  border-gray-800
+                  hover:bg-red-600
+                  transition
+                "
+              >
+                {menu.name}
+              </Link>
+            ))}
+
+          </div>
+        )}
 
       </nav>
 

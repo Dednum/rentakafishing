@@ -26,10 +26,24 @@ export default function ContactSection() {
 
         {/* LEFT IMAGE */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+            y: 40
+          }}
+
+          whileInView={{
+            opacity: 1,
+            y: 0
+          }}
+
+          transition={{
+            duration: 0.7,
+            ease: "easeOut"
+          }}
+
+          viewport={{
+            once: true
+          }}
           className="
             relative
             h-full
@@ -95,10 +109,24 @@ min-h-[420px]
         {/* RIGHT CARD */}
         <motion.div
 
-          initial={{ opacity:0, x:50 }}
-          whileInView={{ opacity:1, x:0 }}
-          transition={{ duration:0.7 }}
-          viewport={{ once:true }}
+          initial={{
+            opacity: 0,
+            y: 40
+          }}
+
+          whileInView={{
+            opacity: 1,
+            y: 0
+          }}
+
+          transition={{
+            duration: 0.7,
+            ease: "easeOut"
+          }}
+
+          viewport={{
+            once: true
+          }}
 
           className="
             bg-[#c00000]
@@ -186,7 +214,7 @@ min-h-[420px]
 
   {/* Facebook */}
   <a
-    href="https://facebook.com/rentaka"
+    href="https://www.facebook.com/FASTackle/"
     target="_blank"
     rel="noopener noreferrer"
     className="
@@ -212,7 +240,7 @@ min-h-[420px]
 
   {/* TikTok */}
   <a
-    href="https://tiktok.com/@rentaka"
+    href="https://www.tiktok.com/search?q=%23rentaka&t=1784546912522"
     target="_blank"
     rel="noopener noreferrer"
     className="

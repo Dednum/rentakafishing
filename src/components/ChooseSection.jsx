@@ -101,7 +101,7 @@ export default function ChooseSection() {
                     items-center
                     justify-center
                     rounded-xl
-                    bg-[#0A483D]
+                    bg-[#D91E18]
                     text-white
                     mb-6
                     group-hover:scale-110

@@ -7,7 +7,7 @@ export default function Footer() {
       className="
         relative
         w-full
-        min-h-[500px]
+        h-[500px]
         bg-cover
         bg-center
         flex
@@ -127,8 +127,7 @@ export default function Footer() {
         {/* Bottom */}
         <div
           className="
-            border-t
-            border-white/20
+
             mt-14
             pt-3
             text-center

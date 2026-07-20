@@ -63,3 +63,36 @@ animation: scroll-left 30s linear infinite;
 animation: scroll-right 30s linear infinite;
 
 }
+
+.banner-carbon {
+  background-image:
+    linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255,255,255,0.03) 25%, transparent 25%);
+  background-size: 20px 20px;
+}
+
+@keyframes scanLight {
+
+    from{
+        transform:translateX(-120%);
+    }
+
+    to{
+        transform:translateX(420%);
+    }
+
+}
+
+.scan-light{
+
+    animation:scanLight 2.6s linear infinite;
+
+    filter:blur(1px);
+
+    opacity:.99;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

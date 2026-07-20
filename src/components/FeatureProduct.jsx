@@ -10,7 +10,7 @@ export default function FeatureProduct({ products }) {
         {/* Title */}
         <div className="text-center mb-14">
 
-          <h2 className="text-4xl font-bold text-[#0A483D]">
+          <h2 className="text-4xl font-bold text-[#111111]">
             Featured Collection
           </h2>
 
@@ -70,7 +70,7 @@ export default function FeatureProduct({ products }) {
                   inset-0
                   flex
                   flex-col
-                  justify-end
+                  justify-center
                   p-8
                   text-white
                 "
@@ -121,9 +121,9 @@ export default function FeatureProduct({ products }) {
                     py-3
                     rounded-full
                     bg-white
-                    text-[#0A483D]
+                    text-[#111111]
                     font-semibold
-                    hover:bg-[#0A483D]
+                    hover:bg-[#D91E18]
                     hover:text-white
                     transition
                   "
