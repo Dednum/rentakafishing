@@ -24,7 +24,7 @@ const products = [
   variants: [
     {
       id: 1,
-      variant: "1",
+      name: "1",
       displayName: "Adikara I",
       code: "RAB631BFS",
       price: 695,
@@ -42,7 +42,7 @@ const products = [
 
     {
       id: 2,
-      variant: "2",
+      name: "2",
       displayName: "Adikara II",
       code: "RAB641L",
       price: 725,
@@ -60,7 +60,7 @@ const products = [
 
     {
       id: 3,
-      variant: "3",
+      name: "3",
       displayName: "Adikara III",
       code: "RAB661M",
       price: 745,
@@ -78,7 +78,7 @@ const products = [
 
     {
       id: 4,
-      variant: "4",
+      name: "4",
       displayName: "Adikara IV",
       code: "RAB671MH",
       price: 765,
@@ -122,7 +122,7 @@ const products = [
     {
       id: 1,
 
-      variant: "0.5",
+      name: "0.5",
 
       displayName: "Ultra Light",
 
@@ -165,7 +165,7 @@ const products = [
     {
       id: 2,
 
-      variant: "1",
+      name: "1",
 
       displayName: "Light",
 
@@ -208,7 +208,7 @@ const products = [
     {
       id: 3,
 
-      variant: "2",
+      name: "2",
 
       displayName: "Medium Light",
 
@@ -251,7 +251,7 @@ const products = [
     {
       id: 4,
 
-      variant: "3",
+      name: "3",
 
       displayName: "Medium",
 
@@ -294,7 +294,7 @@ const products = [
     {
       id: 5,
 
-      variant: "4",
+      name: "4",
 
       displayName: "Medium Heavy",
 
@@ -361,7 +361,7 @@ const products = [
   variants: [
     {
       id: 1,
-      variant: "0.5",
+      name: "0.5",
       displayName: "Ultra Light",
 
       specs: [
@@ -377,7 +377,7 @@ const products = [
 
     {
       id: 2,
-      variant: "1",
+      name: "1",
       displayName: "Light",
 
       specs: [
@@ -393,7 +393,7 @@ const products = [
 
     {
       id: 3,
-      variant: "2",
+      name: "2",
       displayName: "Medium Light",
 
       specs: [
@@ -409,7 +409,7 @@ const products = [
 
     {
       id: 4,
-      variant: "3",
+      name: "3",
       displayName: "Medium",
 
       specs: [
@@ -425,7 +425,7 @@ const products = [
 
     {
       id: 5,
-      variant: "4",
+      name: "4",
       displayName: "Medium Heavy",
 
       specs: [
@@ -466,7 +466,7 @@ const products = [
   variants: [
     {
       id: 1,
-      variant: "5",
+      name: "5",
       displayName: "Extra Medium Heavy",
 
       specs: [
@@ -481,7 +481,7 @@ const products = [
 
     {
       id: 2,
-      variant: "6",
+      name: "6",
       displayName: "Heavy",
 
       specs: [
@@ -496,7 +496,7 @@ const products = [
 
     {
       id: 3,
-      variant: "7",
+      name: "7",
       displayName: "Extra Heavy",
 
       specs: [
@@ -536,7 +536,7 @@ const products = [
   variants: [
     {
       id: 1,
-      variant: "0.8",
+      name: "0.8",
       displayName: "Extra Light",
 
       specs: [
@@ -551,7 +551,7 @@ const products = [
 
     {
       id: 2,
-      variant: "1.5",
+      name: "1.5",
       displayName: "Light",
 
       specs: [
@@ -566,7 +566,7 @@ const products = [
 
     {
       id: 3,
-      variant: "2.5",
+      name: "2.5",
       displayName: "Medium Light",
 
       specs: [
@@ -581,7 +581,7 @@ const products = [
 
     {
       id: 4,
-      variant: "3.5",
+      name: "3.5",
       displayName: "Medium",
 
       specs: [
@@ -596,7 +596,7 @@ const products = [
 
     {
       id: 5,
-      variant: "4.5",
+      name: "4.5",
       displayName: "Medium Heavy",
 
       specs: [
@@ -611,7 +611,7 @@ const products = [
 
     {
       id: 6,
-      variant: "5.5",
+      name: "5.5",
       displayName: "Extra Medium Heavy",
 
       specs: [
@@ -650,7 +650,7 @@ const products = [
   variants: [
     {
       id: 1,
-      variant: "1",
+      name: "1",
       displayName: "Light",
 
       specs: [
@@ -665,7 +665,7 @@ const products = [
 
     {
       id: 2,
-      variant: "3",
+      name: "3",
       displayName: "Medium",
 
       specs: [
@@ -680,7 +680,7 @@ const products = [
 
     {
       id: 3,
-      variant: "5",
+      name: "5",
       displayName: "Medium Heavy",
 
       specs: [
@@ -690,6 +690,106 @@ const products = [
         { label: "Action", value: "Fast" },
         { label: "Weight", value: "114 gm" },
         { label: "Joint", value: "3" },
+      ],
+    },
+  ],
+},
+
+{
+  id: 7,
+
+  category: "rod",
+
+  slug: "enigma",
+
+  name: "Enigma",
+
+  tagline: "Decode The Enigma",
+
+  image: "/products/rod/enigma/enigma.png",
+
+  gallery: [
+    
+    "/products/rod/enigma/enigma1.jpg",
+    "/products/rod/enigma/enigma2.jpg",
+  ],
+
+  description:
+    "Born from thousands of hours at sea and an obsession with modern jigging performance, ENIGMA is designed for anglers who demand sensitivity, lifting power and all-day comfort. Built with premium solid carbon blank technology and a full Fuji KR guide system, it delivers exceptional balance, responsiveness and long-term durability for both offshore and inshore jigging.",
+
+  variants: [
+    {
+      id: 1,
+      name: "1",
+      displayName: "Power 1",
+
+      specs: [
+        { label: "Power", value: "1" },
+        { label: "PE", value: "PE0.8 (16LB)" },
+        { label: "Jig Weight", value: "60 - 150 gm" },
+        { label: "Length", value: `6'0"` },
+        { label: "Weight", value: "132 gm" },
+        { label: "Section", value: "1" },
+      ],
+    },
+
+    {
+      id: 2,
+      name: "2",
+      displayName: "Power 2",
+
+      specs: [
+        { label: "Power", value: "2" },
+        { label: "PE", value: "PE1.2 (20LB)" },
+        { label: "Jig Weight", value: "80 - 170 gm" },
+        { label: "Length", value: `6'0"` },
+        { label: "Weight", value: "138 gm" },
+        { label: "Section", value: "1" },
+      ],
+    },
+
+    {
+      id: 3,
+      name: "2.5",
+      displayName: "Power 2.5",
+
+      specs: [
+        { label: "Power", value: "2.5" },
+        { label: "PE", value: "PE2.5 (30LB)" },
+        { label: "Jig Weight", value: "100 - 230 gm" },
+        { label: "Length", value: `6'0"` },
+        { label: "Weight", value: "143 gm" },
+        { label: "Section", value: "1" },
+      ],
+    },
+
+    {
+      id: 4,
+      name: "3",
+      displayName: "Power 3",
+
+      specs: [
+        { label: "Power", value: "3" },
+        { label: "PE", value: "PE3.0 (40LB)" },
+        { label: "Jig Weight", value: "150 - 300 gm" },
+        { label: "Length", value: `5'8"` },
+        { label: "Weight", value: "144 gm" },
+        { label: "Section", value: "1" },
+      ],
+    },
+
+    {
+      id: 5,
+      name: "4",
+      displayName: "Power 4",
+
+      specs: [
+        { label: "Power", value: "4" },
+        { label: "PE", value: "PE4.0 (50LB)" },
+        { label: "Jig Weight", value: "170 - 400 gm" },
+        { label: "Length", value: `5'8"` },
+        { label: "Weight", value: "153 gm" },
+        { label: "Section", value: "1" },
       ],
     },
   ],

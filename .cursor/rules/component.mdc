@@ -1,0 +1,13 @@
+---
+alwaysApply: true
+---
+
+# Component Rules
+
+- Create reusable components.
+- Keep components focused on a single responsibility.
+- Keep components small and maintainable.
+- Use descriptive prop names.
+- Prefer composition over large components.
+- Avoid deeply nested JSX.
+- Do not duplicate existing components.

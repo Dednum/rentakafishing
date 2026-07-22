@@ -1,5 +1,5 @@
 const line = [
-  {
+{
   id: 1,
 
   category: "line",
@@ -10,97 +10,95 @@ const line = [
 
   tagline: "World Class Line Rating X8",
 
-  image: "/products/line/tempur/tempur.png",
+  description:
+    "An X8-strand braided fishing line engineered with a premium fluorine coating for smooth casting, superior abrasion resistance and long-lasting performance.",
+
+  image: "/products/line/tempur/main.jpg",
 
   gallery: [
-    "/products/line/tempur/tempur.png",
-    "/products/line/tempur/tempur.png",
-    "/products/line/tempur/tempur.png",
+    "/products/line/tempur/marking.jpg",
   ],
 
-  description:
-    "An 8-strand braided fishing line engineered with a premium fluorine coating for smooth casting, superior abrasion resistance and long-lasting performance.",
+  colours: [
+    {
+      id: "blue",
+      name: "Sky Blue",
+      image: "/products/line/tempur/blue.jpg",
+    },
+
+    {
+      id: "red",
+      name: "Pinky Red",
+      image: "/products/line/tempur/red.jpg",
+    },
+
+    {
+      id: "green",
+      name: "Fluorescent Green",
+      image: "/products/line/tempur/green.jpg",
+    },
+  ],
 
   variants: [
     {
       id: 1,
-      variant: "PE 0.8",
-
-      specs: [
-        { label: "PE", value: "0.8" },
-        { label: "Power", value: "11LB" },
-        { label: "Diameter", value: "0.145 mm" },
-        { label: "Available Length", value: "150M" },
-        { label: "Colour", value: "Sky Blue / Pink / Green Bullet" },
-      ],
+      pe: "0.8",
+      power: "12LB",
+      diameter: "0.145 mm",
+      lengths: ["150M", "450M", "1200M"],
     },
 
     {
       id: 2,
-      variant: "PE 1.0",
-
-      specs: [
-        { label: "PE", value: "1.0" },
-        { label: "Power", value: "14LB" },
-        { label: "Diameter", value: "0.165 mm" },
-        { label: "Available Length", value: "150M" },
-        { label: "Colour", value: "Sky Blue / Pink / Green Bullet" },
-      ],
+      pe: "1.0",
+      power: "16LB",
+      diameter: "0.165 mm",
+      lengths: ["150M", "450M", "1200M"],
     },
 
     {
       id: 3,
-      variant: "PE 1.5",
-
-      specs: [
-        { label: "PE", value: "1.5" },
-        { label: "Power", value: "20LB" },
-        { label: "Diameter", value: "0.225 mm" },
-        { label: "Available Length", value: "150M" },
-        { label: "Colour", value: "Sky Blue / Pink / Green Bullet" },
-      ],
+      pe: "1.5",
+      power: "20LB",
+      diameter: "0.225 mm",
+      lengths: ["150M", "450M", "1200M"],
     },
 
     {
       id: 4,
-      variant: "PE 2.0",
-
-      specs: [
-        { label: "PE", value: "2.0" },
-        { label: "Power", value: "25LB" },
-        { label: "Diameter", value: "0.245 mm" },
-        { label: "Available Length", value: "150M" },
-        { label: "Colour", value: "Sky Blue / Pink / Green Bullet" },
-      ],
+      pe: "2.0",
+      power: "30LB",
+      diameter: "0.245 mm",
+      lengths: ["150M", "450M", "1200M"],
     },
 
     {
       id: 5,
-      variant: "PE 2.5",
-
-      specs: [
-        { label: "PE", value: "2.5" },
-        { label: "Power", value: "30LB" },
-        { label: "Diameter", value: "0.305 mm" },
-        { label: "Available Length", value: "1200M" },
-        { label: "Colour", value: "Sky Blue / Pink / Green Bullet" },
-      ],
+      pe: "2.5",
+      power: "40LB",
+      diameter: "0.265 mm",
+      lengths: ["150M", "450M", "1200M"],
     },
 
     {
       id: 6,
-      variant: "PE 4.0",
+      pe: "3.0",
+      power: "50LB",
+      diameter: "0.305 mm",
+      lengths: ["150M", "450M", "1200M"],
+    },
 
-      specs: [
-        { label: "PE", value: "4.0" },
-        { label: "Power", value: "40LB" },
-        { label: "Diameter", value: "0.340 mm" },
-        { label: "Available Length", value: "1200M" },
-        { label: "Colour", value: "Sky Blue / Pink / Green Bullet" },
-      ],
+    {
+      id: 7,
+      pe: "4.0",
+      power: "60LB",
+      diameter: "0.340 mm",
+      lengths: ["150M", "450M", "1200M"],
     },
   ],
 },
+
+
   {
   id: 2,
 
@@ -112,12 +110,10 @@ const line = [
 
   tagline: "100% Premium Fluorocarbon Leader",
 
-  image: "/products/line/halimunan/halimunan.png",
+  image: "/products/line/halimunan/main.jpg",
 
   gallery: [
-    "/products/line/halimunan/halimunan.png",
-    "/products/line/halimunan/halimunan.png",
-    "/products/line/halimunan/halimunan.png",
+    "/products/line/halimunan/halimunan.jpg",
   ],
 
   description:
@@ -126,7 +122,7 @@ const line = [
   variants: [
     {
       id: 1,
-      variant: "2.5LB",
+      name: "2.5LB",
 
       specs: [
         { label: "Power", value: "2.5LB" },
@@ -137,7 +133,7 @@ const line = [
 
     {
       id: 2,
-      variant: "3.0LB",
+      name: "3.0LB",
 
       specs: [
         { label: "Power", value: "3.0LB" },
@@ -148,7 +144,7 @@ const line = [
 
     {
       id: 3,
-      variant: "4.5LB",
+      name: "4.5LB",
 
       specs: [
         { label: "Power", value: "4.5LB" },
@@ -159,7 +155,7 @@ const line = [
 
     {
       id: 4,
-      variant: "5.5LB",
+      name: "5.5LB",
 
       specs: [
         { label: "Power", value: "5.5LB" },
@@ -170,7 +166,7 @@ const line = [
 
     {
       id: 5,
-      variant: "6.5LB",
+      name: "6.5LB",
 
       specs: [
         { label: "Power", value: "6.5LB" },
@@ -181,7 +177,7 @@ const line = [
 
     {
       id: 6,
-      variant: "7.5LB",
+      name: "7.5LB",
 
       specs: [
         { label: "Power", value: "7.5LB" },

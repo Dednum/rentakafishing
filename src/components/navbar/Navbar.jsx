@@ -2,11 +2,42 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import stores from "@/data/store";
+import DesktopMenu from "./DesktopMenu";
+import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
+
+  const [storeOpen, setStoreOpen] = useState(false);
+const [selectedCountry, setSelectedCountry] = useState(null);
+
+  function slugify(text) {
+  return text.toLowerCase().replace(/\s+/g, "-");
+}
+
+const storeMenu = Object.values(
+  stores.reduce((acc, store) => {
+    const country = store.country;
+
+    if (!acc[country]) {
+      acc[country] = {
+        country,
+        countrySlug: slugify(country),
+        states: [],
+      };
+    }
+
+    if (!acc[country].states.find((s) => s.name === store.state)) {
+      acc[country].states.push({
+        name: store.state,
+        slug: slugify(store.state),
+      });
+    }
+
+    return acc;
+  }, {})
+);
 
   const [open, setOpen] = useState(false);
 
@@ -22,10 +53,6 @@ export default function Navbar() {
   {
     name: "Product",
     href: "/product/rod",
-  },
-  {
-    name: "Stores",
-    href: "/stores",
   },
   {
     name: "Contact Us",
@@ -78,36 +105,30 @@ py-5
           className="w-32 md:w-64 h-auto"
         />
 
-        {/* Menu */}
-        <div className="
-hidden
-md:flex
-items-center
-gap-10
-text-xl
-">
+        <DesktopMenu
+          menus={menus}
+          navLink={navLink}
+          storeMenu={storeMenu}
+          storeOpen={storeOpen}
+          setStoreOpen={setStoreOpen}
+          selectedCountry={selectedCountry}
+          setSelectedCountry={setSelectedCountry}
+        />
 
-          {menus.map((menu) => (
-            <Link
-              key={menu.name}
-              href={menu.href}
-              className={navLink}
-            >
-              {menu.name}
-            </Link>
-          ))}
 
-        </div>
 
         {/* hamburger button */}
-        {!isProductPage && (
-          <button
-            onClick={() => setOpen(!open)}
-            className="md:hidden text-white"
-          >
-            {open ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        )}
+        <MobileMenu
+          isProductPage={isProductPage}
+          open={open}
+          setOpen={setOpen}
+          menus={menus}
+          storeMenu={storeMenu}
+          storeOpen={storeOpen}
+          setStoreOpen={setStoreOpen}
+          selectedCountry={selectedCountry}
+          setSelectedCountry={setSelectedCountry}
+        />
 
         {/* Bottom Border */}
         <div className="absolute bottom-0 left-0 w-full">
@@ -121,31 +142,7 @@ text-xl
 
         </div>
 
-        {open && (
-          <div className="md:hidden bg-black">
 
-            {menus.map((menu) => (
-              <Link
-                key={menu.name}
-                href={menu.href}
-                onClick={() => setOpen(false)}
-                className="
-                  block
-                  px-6
-                  py-4
-                  text-white
-                  border-b
-                  border-gray-800
-                  hover:bg-red-600
-                  transition
-                "
-              >
-                {menu.name}
-              </Link>
-            ))}
-
-          </div>
-        )}
 
       </nav>
 

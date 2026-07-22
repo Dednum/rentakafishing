@@ -10,12 +10,12 @@ const line = [
 
   tagline: "Heavy Duty 5X Treble Hook",
 
-  image: "/products/terminal/duri/duri.png",
+  image: "/products/terminal/duri/main.jpg",
 
   gallery: [
-    "/products/terminal/duri/duri.png",
-    "/products/terminal/duri/duri1.png",
-
+    "/products/terminal/duri/duri.jpg",
+    "/products/terminal/duri/duri2.jpg",
+    "/products/terminal/duri/duri3.jpg",
   ],
 
   description:
@@ -24,7 +24,7 @@ const line = [
   variants: [
   {
     id: 1,
-    variant: "#8",
+    name: "#8",
     specs: [
       { label: "Hook Size", value: "#8" },
       { label: "A", value: "16.54 mm" },
@@ -36,7 +36,7 @@ const line = [
 
   {
     id: 2,
-    variant: "#6",
+    name: "#6",
     specs: [
       { label: "Hook Size", value: "#6" },
       { label: "A", value: "17.88 mm" },
@@ -48,7 +48,7 @@ const line = [
 
   {
     id: 3,
-    variant: "#4",
+    name: "#4",
     specs: [
       { label: "Hook Size", value: "#4" },
       { label: "A", value: "20.80 mm" },
@@ -60,7 +60,7 @@ const line = [
 
   {
     id: 4,
-    variant: "#2",
+    name: "#2",
     specs: [
       { label: "Hook Size", value: "#2" },
       { label: "A", value: "23.07 mm" },
@@ -72,7 +72,7 @@ const line = [
 
   {
     id: 5,
-    variant: "#1",
+    name: "#1",
     specs: [
       { label: "Hook Size", value: "#1" },
       { label: "A", value: "25.06 mm" },
@@ -84,7 +84,7 @@ const line = [
 
   {
     id: 6,
-    variant: "#1/0",
+    name: "#1/0",
     specs: [
       { label: "Hook Size", value: "#1/0" },
       { label: "A", value: "27.48 mm" },

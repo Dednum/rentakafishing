@@ -4,35 +4,40 @@ import Link from "next/link";
 import products from "@/data";
 import CategoryBanner from "@/components/CategoryBanner";
 
-const categories = {
+export const categories = {
   rod: {
     title: "Rod",
-    subtitle: "Premium Fishing Rods",
+    subtitle: "PREMIUM FISHING RODS",
     accent: "red",
+    multiline: false,
   },
 
   line: {
     title: "Line",
-    subtitle: "High Performance Fishing Lines",
+    subtitle: "HIGH PERFORMANCE FISHING LINES",
     accent: "blue",
+    multiline: false,
   },
 
   lure: {
     title: "Lure",
-    subtitle: "Designed to Trigger Every Strike",
+    subtitle: "DESIGNED TO TRIGGER STRIKE",
     accent: "orange",
+    multiline: false,
   },
 
   "terminal-tackle": {
     title: "Terminal Tackle",
-    subtitle: "Strength You Can Trust",
+    subtitle: "STRENGTH YOU CAN TRUST",
     accent: "green",
+    multiline: true,
   },
 
   outfit: {
     title: "Outfit",
-    subtitle: "Performance Fishing Apparel",
+    subtitle: "PERFORMANCE FISHING APPAREL",
     accent: "white",
+    multiline: false,
   },
 };
 
@@ -51,6 +56,7 @@ return (
       <section className="bg-white min-h-screen">
 
     <div className="max-w-7xl mx-auto pt-8 pb-20 px-6">
+
 
     <CategoryBanner
       title={categories[slug].title}

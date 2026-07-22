@@ -5,14 +5,16 @@ export default function VariantSelector({
 }) {
   return (
     <div className="flex flex-wrap gap-3">
+      {variants.map((variant, index) => {
 
-      {variants.map((variant) => {
+        const label = variant.name ?? `PE ${variant.pe}`;
+
         const active =
-          selectedVariant.id === variant.id;
+          (selectedVariant?.name ?? `PE ${selectedVariant?.pe}`) === label;
 
         return (
           <button
-            key={variant.id}
+            key={variant.id ?? index}
             onClick={() => setSelectedVariant(variant)}
             className={`
               px-5
@@ -26,16 +28,15 @@ export default function VariantSelector({
 
               ${
                 active
-                  ? "bg-[#D91E18] text-white border-[#0A483D] shadow-lg"
+                  ? "bg-[#D91E18] text-white border-[#D91E18]"
                   : "bg-white text-gray-700 border-gray-300 hover:border-[#EB9F36] hover:text-[#EB9F36]"
               }
             `}
           >
-            {variant.variant}
+            {label}
           </button>
         );
       })}
-
     </div>
   );
 }

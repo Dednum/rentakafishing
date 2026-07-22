@@ -1,0 +1,23 @@
+---
+alwaysApply: true
+---
+
+# Project
+
+This project is a premium fishing brand website called Rentaka.
+
+# Tech Stack
+
+- Next.js 16 App Router
+- React 19
+- JavaScript
+- Tailwind CSS v4
+
+# General Rules
+
+- Always write clean and maintainable code.
+- Prefer readability over cleverness.
+- Avoid duplicate code.
+- Follow the existing project structure.
+- Reuse existing components whenever possible.
+- Do not introduce unnecessary dependencies.

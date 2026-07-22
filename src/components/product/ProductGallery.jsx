@@ -1,15 +1,18 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
-export default function ProductGallery({ product }) {
-  const images =
-    product.gallery?.length > 0
-      ? product.gallery
-      : [product.image];
+export default function ProductGallery({
+  product,
+  images,
+}) {
 
   const [selectedImage, setSelectedImage] = useState(images[0]);
+
+  useEffect(() => {
+    setSelectedImage(images[0]);
+  }, [images]);
 
   return (
     <div className="flex flex-col gap-5">
@@ -27,31 +30,33 @@ export default function ProductGallery({ product }) {
           border-gray-200
         "
       >
-        <Image
+        <img
           src={selectedImage}
           alt={product.name}
-          fill
+          width={2000}
+          height={2000}
           className="
+            w-full
+            h-auto
             object-contain
             p-8
-            transition-transform
-            duration-500
-            hover:scale-105
           "
         />
       </div>
 
       {/* Thumbnail */}
-      <div className="flex gap-4 overflow-x-auto">
+      <div className="flex gap-4 overflow-x-auto max-w-full">
 
         {images.map((image, index) => (
+
           <button
             key={index}
             onClick={() => setSelectedImage(image)}
             className={`
               relative
-              w-24
-              h-24
+              w-20
+              h-20
+              flex-shrink-0
               rounded-xl
               overflow-hidden
               border-2
@@ -64,13 +69,16 @@ export default function ProductGallery({ product }) {
               }
             `}
           >
+
             <Image
               src={image}
               alt={`${product.name}-${index}`}
               fill
               className="object-contain p-2"
             />
+
           </button>
+
         ))}
 
       </div>

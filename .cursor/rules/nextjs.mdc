@@ -1,0 +1,13 @@
+---
+alwaysApply: true
+---
+
+# Next.js Rules
+
+- Always use the App Router.
+- Prefer Server Components whenever possible.
+- Use "use client" only when required.
+- Use next/image for images.
+- Use next/link for internal navigation.
+- Use loading.js and error.js when appropriate.
+- Avoid unnecessary client-side rendering.

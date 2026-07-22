@@ -1,0 +1,15 @@
+---
+alwaysApply: true
+---
+
+# Product Rules
+
+- Products are stored in JSON.
+- Support variants.
+- Support colours.
+- Support gallery.
+- Support specifications.
+- Never hardcode product data.
+- Always use the product slug for routing.
+- Reuse existing ProductCard and ProductGallery components whenever possible.
+- Keep all product structures consistent across categories.

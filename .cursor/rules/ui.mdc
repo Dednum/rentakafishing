@@ -1,0 +1,14 @@
+---
+alwaysApply: true
+---
+
+# UI Rules
+
+- Maintain a premium outdoor fishing aesthetic.
+- Use Tailwind CSS only.
+- Mobile-first responsive design.
+- Use consistent spacing and typography.
+- Match the existing Featured Collection design language.
+- Use rounded corners and subtle shadows.
+- Keep animations smooth and minimal.
+- Do not use inline styles.

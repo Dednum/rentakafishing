@@ -1,0 +1,620 @@
+const stores = [
+    {
+      id: 1,
+      name: "ROD'X Fishing",
+      country: "Malaysia",
+      state: "Johor",
+      city: "Johor Bahru",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0186662453",
+        whatsapp: "60186662453",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/NPuDnkVRrJLpQZKK8",
+        lat: 1.9321368867914859,
+        lng: 102.9524470192338,
+      },
+    },
+  
+    {
+      id: 2,
+      name: "Zam @ Zam Potato",
+      country: "Malaysia",
+      state: "Selangor",
+      city: "Sungai Buloh",
+      address: "",
+      contact: {
+        person: "Zam",
+        phone: "0122006424",
+        whatsapp: "60122006424",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        lat: "",
+        lng: "",
+      },
+    },
+  
+    {
+      id: 3,
+      name: "Amey Yazid (KUBU RENTAKA)",
+      country: "Malaysia",
+      state: "Selangor",
+      city: "Semenyih",
+      address: "",
+      contact: {
+        person: "Amey Yazid",
+        phone: "0179117504",
+        whatsapp: "60179117504",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/NeNefeBBZi7aFUv28",
+        lat: 2.95885757527072,
+        lng: 101.83961627116487,
+      },
+    },
+  
+    {
+      id: 4,
+      name: "Khir Firdaus",
+      country: "Malaysia",
+      state: "Selangor",
+      city: "Selayang",
+      address: "",
+      contact: {
+        person: "Khir Firdaus",
+        phone: "0184710225",
+        whatsapp: "60184710225",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        lat: "",
+        lng: "",
+      },
+    },
+  
+    {
+      id: 5,
+      name: "Puteri Seketul Puteri",
+      country: "Malaysia",
+      state: "Selangor",
+      city: "Klang",
+      address: "",
+      contact: {
+        person: "Puteri",
+        phone: "0129360859",
+        whatsapp: "60129360859",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        lat: "",
+        lng: "",
+      },
+    },
+  
+    {
+      id: 6,
+      name: "Kail Empire Fishing Zone",
+      country: "Malaysia",
+      state: "Selangor",
+      city: "Sepang",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0123547522",
+        whatsapp: "6012-3547522",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/WogFiowhsDDVXnor9",
+        lat: 2.8155653948609762,
+        lng: 101.73454388820831,
+      },
+    },
+  
+    {
+      id: 7,
+      name: "Anglers Central",
+      country: "Malaysia",
+      state: "Selangor",
+      city: "Petaling Jaya",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0378870833",
+        whatsapp: "60103596898",
+      },
+      socials: {
+        website: "https://www.anglerscentral.my/",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/knFZkRTano24wmTi9",
+        lat: 3.121026807031408,
+        lng: 101.59535258242458,
+      },
+    },
+  
+    {
+      id: 8,
+      name: "Aquariq",
+      country: "Malaysia",
+      state: "Selangor",
+      city: "Rawang",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0132233106",
+        whatsapp: "60132233106",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/iH14z2HjkzdRpX7y9",
+        lat: 3.349968164692705, 
+        lng: 101.58034054009474,
+      },
+    },
+  
+    {
+      id: 9,
+      name: "Gudang Bosslat Official",
+      country: "Malaysia",
+      state: "Kuala Lumpur",
+      city: "Setapak",
+      address: "",
+      contact: {
+        person: "",
+        phone: "",
+        whatsapp: "",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/YBkfNxx2Gf6yuLJD6",
+        lat: 3.2020411143426415, 
+        lng:  101.71712008057874,
+      },
+    },
+  
+    {
+      id: 10,
+      name: "Heartcore Angler",
+      country: "Malaysia",
+      state: "Selangor",
+      city: "Bangi",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0389124735",
+        whatsapp: "60172766091",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/VzsimAdqKCgVSzUp8",
+        lat: 2.9318560521046297, 
+        lng: 101.76506086893002,
+      },
+    },
+  
+    {
+      id: 11,
+      name: "Camar TG Tackle",
+      country: "Malaysia",
+      state: "Selangor",
+      city: "Tanjung Karang",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0192894703",
+        whatsapp: "60192894703",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/uPh3rUA7qciSvuvv9",
+        lat: 3.432666398608929, 
+        lng: 101.1841324,
+      },
+    },
+  
+    {
+      id: 12,
+      name: "Fisher Tackles Sdn. Bhd.",
+      country: "Malaysia",
+      state: "Selangor",
+      city: "Shah Alam",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0149212809",
+        whatsapp: "60149212809",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/CKXoDZF8tFPB5iAo9",
+        lat: 3.0650951127326813, 
+        lng: 101.52428078242458,
+      },
+    },
+  
+    {
+      id: 13,
+      name: "TFC Fishing Tackle",
+      country: "Malaysia",
+      state: "Pahang",
+      city: "Temerloh",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0173821770",
+        whatsapp: "60173821770",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/NZdfUVJF5rjqEBFx6",
+        lat: 3.4450878327559837, 
+        lng: 102.41450589407327,
+      },
+    },
+  
+    {
+      id: 14,
+      name: "Tackle Valley",
+      country: "Malaysia",
+      state: "Terengganu",
+      city: "Terengganu",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0109203037",
+        whatsapp: "60109203037",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/Y8K9ZGg1mSRxRMnw8",
+        lat: 5.314891362452464,
+        lng: 103.12172763825065,
+      },
+    },
+  
+    {
+      id: 15,
+      name: "AM Tackle Fishing Studio",
+      country: "Malaysia",
+      state: "Perak",
+      city: "Ipoh",
+      address: "",
+      contact: {
+        person: "",
+        phone: "",
+        whatsapp: "",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        lat: 1.4927,
+        lng: 103.7414,
+      },
+    },
+  
+    {
+      id: 16,
+      name: "Jaza Fishing Shop 2",
+      country: "Malaysia",
+      state: "Perak",
+      city: "Teluk Intan",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0173820810",
+        whatsapp: "60173820810",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/HLPznDWeyZAZvUaP8",
+        lat: 4.026115672131912, 
+        lng: 101.04359797647814,
+      },
+    },
+  
+    {
+      id: 17,
+      name: "Pojie Fauzi Kamarudin",
+      country: "Malaysia",
+      state: "Perlis",
+      city: "Kangar",
+      address: "",
+      contact: {
+        person: "Pojie Fauzi Kamarudin",
+        phone: "0162135877",
+        whatsapp: "60162135877",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        lat: "",
+        lng: "",
+      },
+    },
+  
+    {
+      id: 18,
+      name: "Teejay",
+      country: "Malaysia",
+      state: "Kedah",
+      city: "Alor Setar",
+      address: "",
+      contact: {
+        person: "Teejay",
+        phone: "0195123779",
+        whatsapp: "60195123779",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        lat: "",
+        lng: "",
+      },
+    },
+  
+    {
+      id: 19,
+      name: "Tiny Tackles Fishing Store",
+      country: "Malaysia",
+      state: "Kedah",
+      city: "Sungai Petani",
+      address: "No.114 Jalan Batik 2/3, Taman Batik, 08000 Sungai Petani",
+      contact: {
+        person: "",
+        phone: "0125027594",
+        whatsapp: "60125027594",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/zXWi62mUk2hbZAwA9",
+        lat: 5.633743119741519, 
+        lng: 100.53780182475673,
+      },
+    },
+  
+    {
+      id: 20,
+      name: "Sin Nam Mui Tackle Trading",
+      country: "Malaysia",
+      state: "Sarawak",
+      city: "Kuching",
+      address: "",
+      contact: {
+        person: "",
+        phone: "0198188836",
+        whatsapp: "60198188836",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/2pUSAiq88qdG68dq5",
+        lat: 1.4673599314832864, 
+        lng: 110.32922886708661,
+      },
+    },
+  
+    {
+      id: 21,
+      name: "Irwandi bin Hussaini",
+      country: "Malaysia",
+      state: "Sarawak",
+      city: "Petra Jaya",
+      address: "Lot 1507 Jalan Cenderawasih 6, Samariang Baru Fasa 2, 93350 Petra Jaya",
+      contact: {
+        person: "Irwandi bin Hussaini",
+        phone: "0109797979",
+        whatsapp: "60109797979",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        lat: "", 
+        lng: "",
+      },
+    },
+  
+    {
+      id: 22,
+      name: "The Street Lab",
+      country: "Malaysia",
+      state: "Sarawak",
+      city: "Miri",
+      address: "Ground Floor, Lot 6750, Desa Pujut, Bandar Baru Permyjaya BK10, 98000 Miri",
+      contact: {
+        person: "",
+        phone: "0138685262",
+        whatsapp: "60138685262",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/8Vn4nGEJJkWAkDXt5",
+        lat: 4.45691803061325, 
+        lng: 114.04094841125993,
+      },
+    },
+  
+    {
+      id: 23,
+      name: "Wang Xiing Sdn Bhd",
+      country: "Malaysia",
+      state: "Sarawak",
+      city: "Baram",
+      address: "Lot 40, Beluru Bazaar Bakong, 98050 Baram",
+      contact: {
+        person: "",
+        phone: "0148888212",
+        whatsapp: "60148888212",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/PhsL81xSjDxCcqd78",
+        lat: 3.975586071521778, 
+        lng: 114.10241729776499,
+      },
+    },
+  
+    {
+      id: 24,
+      name: "Tackle Theory",
+      country: "Brunei",
+      state: "Brunei",
+      city: "Bandar Seri Begawan",
+      address: "",
+      contact: {
+        person: "Khabib",
+        phone: "+6738832952",
+        whatsapp: "6738832952",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/WxfCFEaRAAoVD2iN7",
+        lat: 4.945497795241037, 
+        lng: 114.9554423689309,
+      },
+    },
+  ];
+  
+  export default stores;

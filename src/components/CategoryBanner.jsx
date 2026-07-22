@@ -1,6 +1,6 @@
 import accentMap from "@/utils/accentMap";
 
-export default function CategoryBanner({ title, subtitle, accent }) {
+export default function CategoryBanner({ title, subtitle, accent, multiline }) {
 
 
 const color = accentMap[accent];
@@ -83,28 +83,46 @@ console.log(color);
         <div className="relative z-10 -translate-y-4 flex flex-col items-center">
 
             <h1
-                className="
-                    text-5xl
-                    md:text-7xl
-                    font-black
-                    tracking-[0.35em]
-                    text-white
-                    drop-shadow-[0_0_20px_rgba(255,255,255,0.15)]
-                "
-            >
-                {title.toUpperCase()}
-            </h1>
+  className="
+    font-black
+    text-white
+    text-center
+    leading-none
+    drop-shadow-[0_0_20px_rgba(255,255,255,0.15)]
+  "
+>
+  {multiline ? (
+    <>
+      <span className="block text-4xl md:text-5xl tracking-normal">
+  TERMINAL
+</span>
+
+<span className="block text-8xl">
+  TACKLE
+</span>
+    </>
+  ) : (
+    <span className="text-5xl md:text-7xl tracking-[0.35em]">
+      {title.toUpperCase()}
+    </span>
+  )}
+</h1>
 
             <p
-                className="
+                className={`
                     mt-2
-                    text-xs
                     uppercase
-                    tracking-[0.45em]
                     text-gray-400
-                "
-            >
-                {subtitle}
+                    text-center
+                    mx-auto
+                    ${
+                        multiline
+                            ? "text-[9px] tracking-[0.25em]"
+                            : "text-[10px] tracking-[0.35em] max-w-[85%]"
+                    }
+                `}
+                >
+                    {subtitle}
             </p>
 
         </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FeatureProduct({ products }) {
 
@@ -33,8 +34,9 @@ export default function FeatureProduct({ products }) {
                 relative
                 overflow-hidden
                 rounded-3xl
-                h-[450px]
+                h-[560px]
                 group
+                shadow-xl
               "
             >
 
@@ -46,9 +48,9 @@ export default function FeatureProduct({ products }) {
                 fill
                 className="
                   object-cover
+                  transition-all
+                  duration-700
                   group-hover:scale-110
-                  transition
-                  duration-500
                 "
               />
 
@@ -58,7 +60,17 @@ export default function FeatureProduct({ products }) {
                 className="
                   absolute
                   inset-0
-                  bg-black/40
+
+                  bg-gradient-to-t
+                  from-black
+                  via-black/55
+                  to-black/10
+
+                  transition-all
+                  duration-500
+
+                  group-hover:from-black
+                  group-hover:via-black/70
                 "
               />
 
@@ -70,20 +82,35 @@ export default function FeatureProduct({ products }) {
                   inset-0
                   flex
                   flex-col
-                  justify-center
-                  p-8
+                  justify-end
+                  p-10
                   text-white
                 "
               >
 
 
                 <span
-                  className="
-                    text-sm
+                  className={`
+                    inline-flex
+                    items-center
+                    w-fit
+
+                    rounded-full
+
+                    px-4
+                    py-2
+
+                    text-xs
+                    font-bold
                     uppercase
-                    tracking-widest
-                    text-gray-200
-                  "
+                    tracking-[0.25em]
+
+                    ${
+                    product.type === "BEST SELLER"
+                    ? "bg-[#D91E18] text-white"
+                    : "bg-[#EB9F36] text-black"
+                    }
+                  `}
                 >
                   {product.type}
                 </span>
@@ -91,7 +118,8 @@ export default function FeatureProduct({ products }) {
 
                 <h3
                   className="
-                    text-3xl
+                    text-5xl
+                    leading-tight
                     font-bold
                     mt-2
                   "
@@ -102,9 +130,9 @@ export default function FeatureProduct({ products }) {
 
                 <p
                   className="
-                    text-gray-200
-                    mt-3
-                    max-w-md
+                    text-gray-300
+                    leading-8
+                    text-lg
                   "
                 >
                   {product.description}
@@ -112,7 +140,7 @@ export default function FeatureProduct({ products }) {
 
 
 
-                <a
+                <Link
                   href={product.link}
                   className="
                     mt-6
@@ -129,7 +157,7 @@ export default function FeatureProduct({ products }) {
                   "
                 >
                   {product.buttonText}
-                </a>
+                </Link>
 
 
               </div>
