@@ -1,7 +1,7 @@
 import products from "@/data";
 import stores from "@/data/store";
 
-const baseUrl = "https://rentakafishing.com";
+const baseUrl = "https://www.rentakafishing.com";
 
 const categories = [
   "rod",
