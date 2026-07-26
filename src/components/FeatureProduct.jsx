@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import FadeUp from "./animations/FadeUp";
+import FadeScale from "./animations/FadeScale";
 
 export default function FeatureProduct({ products }) {
 
@@ -9,25 +11,29 @@ export default function FeatureProduct({ products }) {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Title */}
-        <div className="text-center mb-14">
+        <FadeUp>
+          <div className="text-center mb-14">
 
-          <h2 className="text-4xl font-bold text-[#111111]">
-            Featured Collection
-          </h2>
+            <h2 className="text-4xl font-bold text-[#111111]">
+              Featured Collection
+            </h2>
 
-          <p className="text-500 mt-3">
-            Discover our best seller and latest fishing equipment.
-          </p>
+            <p className="text-500 mt-3">
+              Discover our best seller and latest fishing equipment.
+            </p>
 
-        </div>
-
+          </div>
+        </FadeUp>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
+          {products.map((product, index)=> (
 
-          {products.map((product)=> (
-
+          <FadeScale
+            key={product.id}
+            delay={index * 0.15}
+          >
             <div
               key={product.id}
               className="
@@ -39,7 +45,6 @@ export default function FeatureProduct({ products }) {
                 shadow-xl
               "
             >
-
 
               {/* Background Image */}
               <Image
@@ -53,7 +58,6 @@ export default function FeatureProduct({ products }) {
                   group-hover:scale-110
                 "
               />
-
 
               {/* Overlay */}
               <div
@@ -74,7 +78,6 @@ export default function FeatureProduct({ products }) {
                 "
               />
 
-
               {/* Content */}
               <div
                 className="
@@ -87,7 +90,6 @@ export default function FeatureProduct({ products }) {
                   text-white
                 "
               >
-
 
                 <span
                   className={`
@@ -158,22 +160,12 @@ export default function FeatureProduct({ products }) {
                 >
                   {product.buttonText}
                 </Link>
-
-
               </div>
-
-
             </div>
-
+          </FadeScale>
           ))}
-
-
         </div>
-
-
       </div>
-
-
     </section>
   );
 }

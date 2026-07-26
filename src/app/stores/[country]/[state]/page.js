@@ -1,5 +1,6 @@
 import stores from "@/data/store";
 import StoreLocator from "@/components/stores/StoreLocator";
+import PageTransition from "@/components/animations/PageTransition";
 
 
 function slugify(text) {
@@ -51,10 +52,10 @@ export default async function StorePage({ params }) {
   );
 
   return (
-    <>
-
-
-      <StoreLocator stores={filteredStores} />
-    </>
+    <PageTransition>
+      <>
+        <StoreLocator stores={filteredStores} />
+      </>
+    </PageTransition>
   );
 }

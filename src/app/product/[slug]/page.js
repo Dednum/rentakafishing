@@ -3,6 +3,7 @@ import ProductTabs from "@/components/ProductTabs";
 import Link from "next/link";
 import products from "@/data";
 import CategoryBanner from "@/components/CategoryBanner";
+import PageTransition from "@/components/animations/PageTransition";
 
 export const categories = {
   rod: {
@@ -77,6 +78,7 @@ export default async function ProductCategory({ params }) {
   );
 
 return (
+  <PageTransition>
   <>
 
     <ProductTabs current={slug} />
@@ -196,6 +198,7 @@ return (
     </div>
 </section>
   </>
+  </PageTransition>
 );
 
 }

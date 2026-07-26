@@ -4,6 +4,8 @@ import {
   Wallet,
   Headphones
 } from "lucide-react";
+import FadeUp from "./animations/FadeUp";
+import FadeScale from "./animations/FadeScale";
 
 const reasons = [
   {
@@ -42,23 +44,22 @@ export default function ChooseSection() {
 
 
         {/* Heading */}
-        <div className="text-center mb-14">
+        <FadeUp>
+          <div className="text-center mb-14">
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Why Choose Rentaka?
-          </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Why Choose Rentaka?
+            </h2>
 
-          <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
-            We focus on delivering quality products, trusted service,
-            and the best experience for our customers.
-          </p>
+            <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
+              We focus on delivering quality products, trusted service,
+              and the best experience for our customers.
+            </p>
 
-        </div>
-
-
+          </div>
+        </FadeUp>
 
         {/* Cards */}
-
         <div className="
           grid 
           grid-cols-1 
@@ -67,93 +68,78 @@ export default function ChooseSection() {
           gap-6
         ">
 
-
           {reasons.map((item,index)=>{
 
             const Icon = item.icon;
 
             return (
-
-              <div
-                key={index}
-                className="
-                  group
-                  p-8
-                  rounded-2xl
-                  border
-                  border-gray-100
-                  bg-white
-                  shadow-sm
-                  hover:shadow-xl
-                  transition-all
-                  duration-300
-                  hover:-translate-y-2
-                "
+              <FadeScale
+                key={item.title}
+                delay={index * 0.1}
               >
-
-                {/* Icon */}
-
                 <div
+                  key={index}
                   className="
-                    w-14
-                    h-14
-                    flex
-                    items-center
-                    justify-center
-                    rounded-xl
-                    bg-[#D91E18]
-                    text-white
-                    mb-6
-                    group-hover:scale-110
-                    transition
+                    group
+                    p-8
+                    rounded-2xl
+                    border
+                    border-gray-100
+                    bg-white
+                    shadow-sm
+                    hover:shadow-xl
+                    transition-all
+                    duration-300
+                    hover:-translate-y-2
                   "
                 >
 
-                  <Icon size={28}/>
+                  {/* Icon */}
+                  <div
+                    className="
+                      w-14
+                      h-14
+                      flex
+                      items-center
+                      justify-center
+                      rounded-xl
+                      bg-[#D91E18]
+                      text-white
+                      mb-6
+                      group-hover:scale-110
+                      transition
+                    "
+                  >
+                    <Icon size={28}/>
+                  </div>
 
+                  {/* Title */}
+                  <h3
+                    className="
+                      text-xl
+                      font-semibold
+                      text-gray-900
+                      mb-3
+                    "
+                  >
+                    {item.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p
+                    className="
+                      text-gray-500
+                      leading-relaxed
+                    "
+                  >
+                    {item.description}
+                  </p>
                 </div>
-
-
-
-                {/* Title */}
-
-                <h3
-                  className="
-                    text-xl
-                    font-semibold
-                    text-gray-900
-                    mb-3
-                  "
-                >
-                  {item.title}
-                </h3>
-
-
-
-                {/* Description */}
-
-                <p
-                  className="
-                    text-gray-500
-                    leading-relaxed
-                  "
-                >
-                  {item.description}
-                </p>
-
-
-              </div>
-
+              </FadeScale>
             )
-
           })}
-
-
         </div>
-
-
       </div>
-
     </section>
   )
 }

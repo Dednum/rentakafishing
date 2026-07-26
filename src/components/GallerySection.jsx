@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import FadeUp from "./animations/FadeUp";
 
 const galleryTop = [
   "/gallery/1.png",
@@ -9,7 +9,6 @@ const galleryTop = [
   "/gallery/5.png",
 ];
 
-
 const galleryBottom = [
   "/gallery/6.png",
   "/gallery/7.png",
@@ -18,11 +17,8 @@ const galleryBottom = [
   "/gallery/10.png",
 ];
 
-
 function GalleryRow({images, direction}){
-
   return (
-
     <div
       className="
         flex
@@ -82,81 +78,59 @@ function GalleryRow({images, direction}){
   )
 }
 
-
-
 export default function GallerySection(){
-
-
 return (
 
 <section className="bg-black py-20 overflow-hidden">
+  <div className="max-w-7xl mx-auto px-6">
 
+    {/* Header */}
+    <FadeUp>
+      <div className="text-center mb-14">
 
-<div className="max-w-7xl mx-auto px-6">
+        <h2 className="
+        text-4xl
+        font-bold
+        text-White
+        ">
+          Experience With Rentaka
+        </h2>
 
+        <p className="
+        text-gray-500
+        mt-4
+        ">
+          Explore our journey, adventures and moments shared with our community.
+        </p>
 
-{/* Header */}
+      </div>
+    </FadeUp>
 
-<div className="text-center mb-14">
+    {/* Gallery */}
+    <div className="space-y-8">
 
-<h2 className="
-text-4xl
-font-bold
-text-White
-">
-Experience With Rentaka
-</h2>
+      {/* top move right */}
+      <div className="overflow-hidden">
 
+        <GalleryRow 
+          images={galleryTop}
+          direction="right"
+        />
 
-<p className="
-text-gray-500
-mt-4
-">
-Explore our journey, adventures and moments shared with our community.
-</p>
+      </div>
 
-</div>
+      {/* bottom move left */}
 
+      <div className="overflow-hidden">
 
+        <GalleryRow 
+        images={galleryBottom}
+        direction="left"
+        />
 
-
-{/* Gallery */}
-
-<div className="space-y-8">
-
-
-{/* top move right */}
-
-<div className="overflow-hidden">
-
-<GalleryRow 
-images={galleryTop}
-direction="right"
-/>
-
-</div>
-
-
-
-{/* bottom move left */}
-
-<div className="overflow-hidden">
-
-<GalleryRow 
-images={galleryBottom}
-direction="left"
-/>
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
+      </div>
+    </div>
+  </div>
 </section>
 
 )

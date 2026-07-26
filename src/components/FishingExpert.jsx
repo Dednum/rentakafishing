@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import FadeUp from "./animations/FadeUp";
+import FadeScale from "./animations/FadeScale";
 
 const experts = [
   {
@@ -25,194 +26,149 @@ const experts = [
   },
 ];
 
-
 export default function FishingExpert(){
+  return (
+    <section className="bg-white py-20">
+      <div className="max-w-7xl mx-auto px-6">
 
-return (
+        {/* Header */}
+        <FadeUp>
+          <div className="text-center mb-14">
+            <h2
+              className="
+              text-4xl
+              md:text-5xl
+              font-bold
+              text-black
+              "
+            >
+              Expert Rentaka Specialist
+            </h2>
 
-<section className="bg-white py-20">
+            <p
+              className="
+              mt-4
+              text-gray-500
+              max-w-2xl
+              mx-auto
+              "
+            >
+              Meet our experienced team who share
+              knowledge, passion and expertise to help
+              you enjoy fishing hunter.
+            </p>
+          </div>
+        </FadeUp>
 
+        {/* Cards */}
+        <div
+          className="
+          grid
+          grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-3
+          gap-8
+          "
+        >
 
-<div className="max-w-7xl mx-auto px-6">
+          {experts.map((expert,index)=>(
 
-
-{/* Header */}
-
-<div className="text-center mb-14">
-
-
-<h2
-className="
-text-4xl
-md:text-5xl
-font-bold
-text-black
-"
->
-Expert Rentaka Specialist
-</h2>
-
-
-<p
-className="
-mt-4
-text-gray-500
-max-w-2xl
-mx-auto
-"
->
-Meet our experienced team who share
-knowledge, passion and expertise to help
-you enjoy fishing hunter.
-</p>
-
-
-</div>
-
-
-
-
-{/* Cards */}
-
-<div
-className="
-grid
-grid-cols-1
-md:grid-cols-2
-lg:grid-cols-3
-gap-8
-"
->
-
-
-{
-experts.map((expert,index)=>(
-
-
-<div
-key={index}
-className="
-group
-relative
-overflow-hidden
-rounded-3xl
-h-[430px]
-shadow-lg
-cursor-pointer
-"
->
+            <FadeScale
+              key={expert.name}
+              delay={index * 0.1}
+            >
+              <div
+                className="
+                group
+                relative
+                overflow-hidden
+                rounded-3xl
+                h-[430px]
+                shadow-lg
+                cursor-pointer
+                "
+              >
 
 
-{/* Image */}
+              {/* Image */}
+              <Image
+                src={expert.image}
+                alt={expert.name}
+                fill
+                className="
+                object-cover
+                group-hover:scale-110
+                transition
+                duration-700
+                "
+              />
 
-<Image
+              {/* Dark overlay */}
+              <div
+                className="
+                absolute
+                inset-0
+                bg-gradient-to-t
+                from-black/80
+                via-black/20
+                to-transparent
+                "
+              />
 
-src={expert.image}
-alt={expert.name}
-fill
+                {/* Content */}
+                <div
+                  className="
+                  absolute
+                  bottom-0
+                  p-7
+                  text-white
+                  "
+                >
 
-className="
-object-cover
-group-hover:scale-110
-transition
-duration-700
-"
+                  {/* Badge */}
+                  <span
+                    className="
+                    inline-block
+                    bg-[#D91E18]
+                    px-4
+                    py-1
+                    rounded-full
+                    text-sm
+                    mb-4
+                    "
+                  >
+                    {expert.role}
+                  </span>
 
-/>
+                  <h3
+                    className="
+                    text-2xl
+                    font-bold
+                    "
+                  >
+                    {expert.name}
+                  </h3>
 
-
-
-{/* Dark overlay */}
-
-<div
-className="
-absolute
-inset-0
-bg-gradient-to-t
-from-black/80
-via-black/20
-to-transparent
-"
-/>
-
-
-
-{/* Content */}
-
-<div
-className="
-absolute
-bottom-0
-p-7
-text-white
-"
->
-
-
-{/* Badge */}
-
-<span
-className="
-inline-block
-bg-[#D91E18]
-px-4
-py-1
-rounded-full
-text-sm
-mb-4
-"
->
-{expert.role}
-</span>
-
-
-
-<h3
-className="
-text-2xl
-font-bold
-"
->
-{expert.name}
-</h3>
-
-
-
-<p
-className="
-mt-3
-text-sm
-text-gray-200
-leading-relaxed
-opacity-0
-group-hover:opacity-100
-transition
-duration-500
-"
->
-{expert.description}
-</p>
-
-
-</div>
-
-
-</div>
-
-
-))
-
-}
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-)
-
+                  <p
+                    className="
+                    mt-3
+                    text-sm
+                    text-gray-200
+                    leading-relaxed
+                    opacity-0
+                    group-hover:opacity-100
+                    transition
+                    duration-500
+                    "
+                  >
+                    {expert.description}
+                  </p>
+                </div>
+              </div>
+            </FadeScale>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
 }
