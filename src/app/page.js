@@ -14,6 +14,32 @@ const anton = Anton({
   weight: "400",
 });
 
+export const metadata = {
+  title: "Home",
+
+  description:
+    "Discover Rentaka Fishing, a Malaysian brand offering premium fishing tackle including hooks, rods, reels, lines, lures and accessories. Explore our featured products, product categories and expert fishing equipment for every angler.",
+
+  keywords: [
+    "Rentaka Fishing",
+    "Malaysian Fishing Brand",
+    "Fishing Tackle Malaysia",
+    "Premium Fishing Equipment",
+    "Fishing Products",
+    "Fishing Hooks",
+    "Fishing Rods",
+    "Fishing Reels",
+    "Fishing Lines",
+    "Fishing Lures",
+    "Fishing Accessories",
+    "Featured Fishing Products",
+  ],
+
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
   return (
     <div

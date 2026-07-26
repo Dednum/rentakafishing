@@ -339,7 +339,7 @@ const stores = [
       name: "Tackle Valley",
       country: "Malaysia",
       state: "Terengganu",
-      city: "Terengganu",
+      city: "Kuala Terengganu",
       address: "",
       contact: {
         person: "",

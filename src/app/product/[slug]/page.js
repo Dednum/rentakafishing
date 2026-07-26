@@ -41,6 +41,33 @@ export const categories = {
   },
 };
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+
+  const category = categories[slug];
+
+  return {
+    title: category.title,
+
+    description: `Browse Rentaka Fishing's premium ${category.title.toLowerCase()} collection. Discover high-quality ${category.title.toLowerCase()} designed for performance, durability, and every fishing adventure in Malaysia.`,
+
+    keywords: [
+      `Rentaka ${category.title}`,
+      `${category.title} Malaysia`,
+      `${category.title} Fishing`,
+      `Premium ${category.title}`,
+      "Rentaka Fishing",
+      "Fishing Equipment",
+      "Fishing Tackle",
+      "Malaysia Fishing",
+    ],
+
+    alternates: {
+      canonical: `/product/${slug}`,
+    },
+  };
+}
+
 export default async function ProductCategory({ params }) {
 
   const { slug } = await params;

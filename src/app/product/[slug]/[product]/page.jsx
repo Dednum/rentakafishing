@@ -1,8 +1,41 @@
 import products from "@/data";
 import Link from "next/link";
 import ProductInfo from "@/components/product/ProductInfo";
+import { notFound } from "next/navigation";
 
+export async function generateMetadata({ params }) {
+  const { slug, product } = await params;
 
+  const data = products.find(
+    (item) =>
+      item.category === slug &&
+      item.slug === product
+  );
+
+  if (!data) {
+    notFound();
+  }
+
+  return {
+    title: `${data.name} | Rentaka Fishing`,
+
+    description: data.description,
+
+    keywords: [
+      data.name,
+      `Rentaka ${data.name}`,
+      `Rentaka ${slug}`,
+      "Rentaka Fishing",
+      "Fishing Equipment",
+      "Fishing Tackle",
+      "Malaysia Fishing",
+    ],
+
+    alternates: {
+      canonical: `/product/${slug}/${product}`,
+    },
+  };
+}
 
 export default async function ProductDetail({ params }) {
 
@@ -21,6 +54,9 @@ export default async function ProductDetail({ params }) {
       </div>
     );
   }
+
+  
+
 
   return (
     <div className="bg-white min-h-screen">
