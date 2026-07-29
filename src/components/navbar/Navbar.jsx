@@ -97,7 +97,7 @@ py-5
 
         {/* Logo */}
         <Image
-          src="/logo.png"
+          src="/rentaka.png"
           alt="Rentaka Logo"
           width={180}
           height={60}

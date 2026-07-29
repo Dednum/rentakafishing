@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="text-center mb-14">
 
           <Image
-            src="/logo.png"
+            src="/rentaka.png"
             alt="Rentaka Fishing"
             width={120}
             height={120}
