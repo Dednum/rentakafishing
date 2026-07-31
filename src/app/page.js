@@ -234,7 +234,7 @@ export default function Home() {
       </section>
 
       {/*Specialist Section*/}
-      <section className="w-full bg-white py-5">
+      <section className="w-full">
         <FishingExpert />
       </section>
 

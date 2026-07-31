@@ -1,0 +1,161 @@
+const crew = [
+  {
+    id: 1,
+    name: "JIMOQUE",
+    role: "CEO",
+    image: "/crew/1.jpeg",
+  },
+  {
+    id: 2,
+    name: "AMZAR",
+    role: "Saltwater Specialist",
+    image: "/crew/shr.png",
+  },
+  {
+    id: 3,
+    name: "AMEY YAZID",
+    role: "Casting Expert",
+    image: "/crew/3.jpeg",
+  },
+  {
+    id: 4,
+    name: "ZAMPOTATO",
+    role: "Guide",
+    image: "/crew/4.jpeg",
+  },
+  {
+    id: 5,
+    name: "KHIR",
+    role: "Freshwater Specialist",
+    image: "/crew/5.jpg",
+  },
+  {
+    id: 6,
+    name: "ROD'X",
+    role: "Crew",
+    image: "/crew/6a.jpg",
+  },
+    {
+    id: 7,
+    name: "AIMAN",
+    role: "Crew",
+    image: "/crew/7.jpeg",
+  },
+    {
+    id: 8,
+    name: "TOTET",
+    role: "Crew",
+    image: "/crew/shr.png",
+  },
+    {
+    id: 9,
+    name: "MALIK ALI",
+    role: "Crew",
+    image: "/crew/9.jpeg",
+  },
+    {
+    id: 10,
+    name: "NASHA ALI",
+    role: "Crew",
+    image: "/crew/10a.jpg",
+  },
+
+    {
+    id: 11,
+    name: "FARHAN",
+    role: "Crew",
+    image: "/crew/11.jpeg",
+  },
+    {
+    id: 12,
+    name: "PUTERI",
+    role: "Crew",
+    image: "/crew/shr.png",
+  },
+    {
+    id: 13,
+    name: "JEBAT",
+    role: "Crew",
+    image: "/crew/5.jpg",
+  },
+    {
+    id: 14,
+    name: "ALIF",
+    role: "Crew",
+    image: "/crew/shr.png",
+  },
+    {
+    id: 15,
+    name: "EPY",
+    role: "Crew",
+    image: "/crew/15.jpeg",
+  },
+    {
+    id: 16,
+    name: "EDY",
+    role: "Crew",
+    image: "/crew/shr.png",
+  },
+    {
+    id: 17,
+    name: "TEEJAY",
+    role: "Crew",
+    image: "/crew/shr.png",
+  },
+    {
+    id: 18,
+    name: "KIMI",
+    role: "Crew",
+    image: "/crew/18.jpg",
+  },
+    {
+    id: 19,
+    name: "PAPANG",
+    role: "Crew",
+    image: "/crew/shr.png",
+  },
+    {
+    id: 20,
+    name: "AIMAN GEDUH",
+    role: "Crew",
+    image: "/crew/20a.jpg",
+  },
+    {
+    id: 21,
+    name: "MATNEL",
+    role: "Crew",
+    image: "/crew/21.jpeg",
+  },
+    {
+    id: 22,
+    name: "PAK OIL",
+    role: "Crew",
+    image: "/crew/22.jpg",
+  },
+    {
+    id: 23,
+    name: "WAWA",
+    role: "Crew",
+    image: "/crew/23a.jpg",
+  },
+    {
+    id: 24,
+    name: "WAWA ALI",
+    role: "Crew",
+    image: "/crew/24.png",
+  },
+    {
+    id: 25,
+    name: "AH RIEP",
+    role: "Crew",
+    image: "/crew/25.jpg",
+  },
+    {
+    id: 26,
+    name: "FAHANIF",
+    role: "Crew",
+    image: "/crew/26.png",
+  },
+];
+
+export default crew;
