@@ -65,7 +65,7 @@ export default function Home() {
           w-full
           h-[630px]
           md:h-[700px]
-          bg-[url('/herobg.jpg')]
+          bg-[url('/herobg.JPG')]
           bg-cover
           bg-center
           bg-no-repeat
