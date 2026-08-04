@@ -96,13 +96,13 @@ py-5
 ">
 
         {/* Logo */}
-        <Image
-          src="/rentaka.png"
+        <img
+          src="/verticallogo2.PNG"
           alt="Rentaka Logo"
           width={180}
           height={60}
-          priority
-          className="w-32 md:w-64 h-auto"
+
+          className="w-[280px] h-auto"
         />
 
         <DesktopMenu

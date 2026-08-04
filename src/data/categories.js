@@ -4,6 +4,7 @@ const categories = [
     title: "Rod",
     slug: "rod",
     image: "/category/rod.jpg",
+    position: "object-center",
     description: "High quality fishing rods",
   },
   {
@@ -11,12 +12,14 @@ const categories = [
     title: "Line",
     slug: "line",
     image: "/category/line.jpg",
+    position: "object-center",
     description: "Strong braided & mono lines",
   },
   {
     id: 3,
     title: "Lure",
     slug:"lure",
+    position: "object-center",
     image: "/category/lure.jpg",
 
     description: "Artificial bait collection",
@@ -26,6 +29,7 @@ const categories = [
     title: "Outfit",
     slug: "outfit",
     image: "/category/apparel.jpg",
+    position: "object-top",
     description: "Fishing apparel & accessories",
   },
 ];

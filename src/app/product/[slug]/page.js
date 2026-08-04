@@ -124,22 +124,19 @@ return (
 
             <div className="p-4">
 
-              <div className="overflow-hidden rounded-xl">
-
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
                 <img
                   src={product.image}
                   alt={product.name}
                   className="
-                  w-full
-                  h-64
-                  object-cover
-                  transition-all
-                  duration-700
-                  group-hover:scale-105
-                  group-hover:brightness-110
+                    w-full
+                    h-full
+                    object-cover
+                    transition-all
+                    duration-700
+                    group-hover:scale-105
                   "
                 />
-
               </div>
 
             </div>

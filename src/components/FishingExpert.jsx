@@ -94,7 +94,7 @@ export default function FishingExpert() {
           >
 
             <Image
-              src="/crew/postercrew.webp"
+              src="/crew/crewcrew0.webp"
               alt="Rentaka Crew"
               width={1800}
               height={1000}

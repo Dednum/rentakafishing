@@ -184,20 +184,20 @@ export default function Home() {
                     "
                     >
 
-                    <Image
-                      src={category.image}
-                      alt={category.title}
-                      width={400}
-                      height={300}
-                      className="
-                        w-full
-                        h-60
-                        object-cover
-                        group-hover:scale-110
-                        transition
-                        duration-500
-                      "
-                    />
+                    <div className="relative aspect-[3/2] overflow-hidden rounded-t-3xl">
+                      <Image
+                        src={category.image}
+                        alt={category.title}
+                        fill
+                        className={`
+                          object-cover
+                          ${category.position}
+                          group-hover:scale-110
+                          transition
+                          duration-500
+                        `}
+                      />
+                    </div>
 
                     <div className="p-6">
 

@@ -10,12 +10,18 @@ const line = [
 
   tagline: "Heavy Duty 5X Treble Hook",
 
-  image: "/products/terminal/duri/main.jpg",
+  image: "/products/terminal/duri/mainduri.JPG",
 
   gallery: [
-    "/products/terminal/duri/duri.jpg",
-    "/products/terminal/duri/duri2.jpg",
-    "/products/terminal/duri/duri3.jpg",
+    "/products/terminal/duri/1.webp",
+    "/products/terminal/duri/2.webp",
+    "/products/terminal/duri/3.webp",
+    "/products/terminal/duri/4.webp",
+    "/products/terminal/duri/size8.webp",
+    "/products/terminal/duri/size6.webp",
+    "/products/terminal/duri/size4.webp",
+    "/products/terminal/duri/size2.webp",
+    "/products/terminal/duri/size10.webp",
   ],
 
   description:
