@@ -3,7 +3,7 @@ const categories = [
     id: 1,
     title: "Rod",
     slug: "rod",
-    image: "/category/rod.jpg",
+    image: "/category/rodc.jpg",
     position: "object-center",
     description: "High quality fishing rods",
   },
@@ -11,26 +11,35 @@ const categories = [
     id: 2,
     title: "Line",
     slug: "line",
-    image: "/category/line.jpg",
+    image: "/category/linec.jpg",
     position: "object-center",
-    description: "Strong braided & mono lines",
+    description: "Braided & mono lines",
   },
   {
     id: 3,
     title: "Lure",
     slug:"lure",
     position: "object-center",
-    image: "/category/lure.jpg",
+    image: "/category/lurec.jpg",
 
     description: "Artificial bait collection",
   },
-  {
+    {
     id: 4,
+    title: "Terminal",
+    slug:"terminal",
+    position: "object-center",
+    image: "/category/terminalc.jpg",
+
+    description: "Terminal-tackle tools",
+  },
+  {
+    id: 5,
     title: "Outfit",
     slug: "outfit",
-    image: "/category/apparel.jpg",
+    image: "/category/apparelc.jpg",
     position: "object-top",
-    description: "Fishing apparel & accessories",
+    description: "Apparel & accessories",
   },
 ];
 

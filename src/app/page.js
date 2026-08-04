@@ -65,7 +65,7 @@ export default function Home() {
           w-full
           h-[630px]
           md:h-[700px]
-          bg-[url('/www.png')]
+          bg-[url('/herobg.jpg')]
           bg-cover
           bg-center
           bg-no-repeat
@@ -157,7 +157,7 @@ export default function Home() {
           </FadeUp>
 
             {/* Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
 
             {categories.map((category, index) => (
 

@@ -4,6 +4,8 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import crew from "@/data/crewData";
+import FadeUp from "./animations/FadeUp";
+import FadeScale from "./animations/FadeScale";
 
 export default function FishingExpert() {
   // =========================
@@ -52,6 +54,7 @@ export default function FishingExpert() {
         {/* HEADER */}
         {/* ========================= */}
 
+        <FadeUp>
         <div className="text-center">
 
           <p className="uppercase tracking-[5px] text-[#EB9F36] text-sm md:text-base">
@@ -67,11 +70,13 @@ export default function FishingExpert() {
           </p>
 
         </div>
+        </FadeUp>
 
         {/* ========================= */}
         {/* POSTER */}
         {/* ========================= */}
 
+        <FadeScale>
         <div className="mt-16 flex justify-center">
 
           <div
@@ -148,6 +153,7 @@ export default function FishingExpert() {
           </div>
 
         </div>
+        </FadeScale>
 
         <div className="mt-6 flex justify-center md:hidden">
           <button
