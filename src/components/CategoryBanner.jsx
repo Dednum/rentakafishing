@@ -15,19 +15,30 @@ console.log(color);
 
         {/* Banner Container */}
         <div
-            className="
-                banner-carbon
-                relative
-                overflow-hidden
-                rounded-3xl
-                bg-[#050505]
-                h-[220px]
-                md:h-[260px]
-                flex
-                items-center
-                justify-center
-            "
+        className="
+            relative
+            overflow-hidden
+            rounded-3xl
+            h-[220px]
+            md:h-[260px]
+            flex
+            items-center
+            justify-center
+        "
         >
+
+        <img
+            src="/herobg.JPG"
+            alt=""
+            className="
+            absolute
+            inset-0
+            w-full
+            h-full
+            object-cover
+            
+            "
+        />
 
         {/* Top Accent */}
         <div
@@ -66,18 +77,7 @@ console.log(color);
             "
         />
 
-        {/* Noise Texture */}
-        <div
-            className="
-                absolute
-                inset-0
-                opacity-[0.03]
-                mix-blend-overlay
-                bg-[radial-gradient(circle,#ffffff_1px,transparent_1px)]
-                bg-[size:12px_12px]
-                
-            "
-        />
+
 
         {/* Banner Content */}
         <div className="relative z-10 -translate-y-4 flex flex-col items-center">
@@ -169,38 +169,9 @@ console.log(color);
 
 
 
-        {/* Watermark */}
-        <div
-            className="
-                absolute
-                text-[160px]
-                font-black
-                italic
-                text-white/[0.10]
-                whitespace-nowrap
-                select-none
-                -rotate-12
-                left-8
-                top-1/2
-                -translate-y-1/2
-            "
-            >
-            RENTAKA
-        </div>
 
-        {/* Red Ambient Glow */}
-        <div
-            className={`absolute
-                -right-24
-                top-1/2
-                -translate-y-1/2
-                w-[420px]
-                h-[320px]
-                rounded-full
-                ${color.lineSoft}
-                blur-[120px]`}
-            />
-            
+
+
         </div>
 
     </section>

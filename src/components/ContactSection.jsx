@@ -12,7 +12,7 @@ import {
 
 export default function ContactSection() {
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white pt-20 pb-0">
 
       <div className="
         max-w-7xl
@@ -52,7 +52,7 @@ export default function ContactSection() {
 min-h-[420px]
             overflow-hidden
             rounded-3xl
-            shadow-xl
+            
             group
           "
         >
@@ -135,7 +135,7 @@ min-h-[420px]
             rounded-3xl
             p-10
             text-white
-            shadow-2xl
+            
             relative
             overflow-hidden
             h-full
