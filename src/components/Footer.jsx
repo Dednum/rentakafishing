@@ -1,53 +1,37 @@
 import Image from "next/image";
 import { FaWhatsapp, FaFacebookF, FaTiktok } from "react-icons/fa";
 import social from "@/data/social";
+import FadeUp from "./animations/FadeUp";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full">
+    
 
-  {/* Background Image */}
+
+<footer className="w-full">
+
+  {/* Top Divider */}
   <img
-    src="/footer.jpeg"
-    alt="Footer Background"
+    src="/footer1.JPG"
+    alt=""
     className="w-full h-auto block"
   />
 
-<div
-  className="
-    absolute
-    inset-0
-    flex
-    justify-center
-    items-end
-    pb-10
-    text-center
-text-white
-    z-10
-  "
->
-  <div className="text-center">
-      {/* Overlay Content */}
+  {/* Footer */}
+  <div className="bg-black text-white">
+    <FadeUp>
+    <div className="max-w-7xl mx-auto py-3 px-6 text-center">
 
+      <img
+        src="/verticallogo2.PNG"
+        className="w-40 mx-auto mb-4"
+      />
 
-    {/* Logo */}
-    <img
-      src="/verticallogo2.PNG"
-      alt="Rentaka"
-      width={120}
-      height={120}
-      className="w-44 h-auto mx-auto mb-4"
-    />
+      <p className="italic text-white/70 mb-8">
+        Where Every Cast Tells A Story
+      </p>
 
-    <p className="italic text-white/80 mb-10">
-      Where Every Cast Tells A Story
-    </p>
-
-    <h3 className="text-2xl font-bold mb-4">
-      Contact
-    </h3>
-
-    <div className="flex justify-center gap-6 text-3xl mb-12">
+          <div className="flex justify-center gap-6 text-3xl mb-12">
   <a
     href={social.whatsapp}
     target="_blank"
@@ -73,16 +57,17 @@ text-white
   </a>
 </div>
 
-    <div className="text-center text-sm text-white/70">
-      © 2026 Rentaka Fishing. All Rights Reserved.
-      <br />
-      Privacy Policy | Terms & Conditions
+      <p className="text-sm text-white/60">
+        © 2026 Rentaka Fishing. All Rights Reserved.
+      </p>
+
+      <p className="text-sm text-white/40 mt-2">
+        Privacy Policy | Terms & Conditions
+      </p>
+
     </div>
-
-
+    </FadeUp>
   </div>
-</div>
-
 
 </footer>
   );

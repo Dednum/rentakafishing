@@ -27,7 +27,7 @@ const categories = [
     {
     id: 4,
     title: "Terminal",
-    slug:"terminal",
+    slug:"terminal-tackle",
     position: "object-center",
     image: "/category/terminalc.JPG",
 
