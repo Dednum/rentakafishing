@@ -21,14 +21,16 @@ variants: [
     name: "Mini",
 
     gallery: [
-      "/products/lure/bodobodo/mini.jpg",
-      "/products/lure/bodobodo/babytoman.jpg",
-      "/products/lure/bodobodo/firetiger.jpg",
-      "/products/lure/bodobodo/shad.jpg",
-      "/products/lure/bodobodo/yellowclown.jpg",
-      "/products/lure/bodobodo/ocw.jpg",
-      "/products/lure/bodobodo/whiteclown.jpg",
-      "/products/lure/bodobodo/goldfish.jpg",
+      "/products/lure/bodobodo/mini/size.JPG",
+      "/products/lure/bodobodo/mini/variant.JPG",
+      "/products/lure/bodobodo/mini/babytoman.JPG",
+      "/products/lure/bodobodo/mini/firetiger.JPG",
+      "/products/lure/bodobodo/mini/shad.JPG",
+      "/products/lure/bodobodo/mini/yellowclown.JPG",
+      "/products/lure/bodobodo/mini/ocw.JPG",
+      "/products/lure/bodobodo/mini/whiteclown.JPG",
+      "/products/lure/bodobodo/mini/goldfish.JPG",
+      "/products/lure/bodobodo/mini/desc.JPG",
     ],
 
     specs: [
@@ -45,14 +47,16 @@ variants: [
     name: "Junior",
 
     gallery: [
-      "/products/lure/bodobodo/junior.jpg",
-      "/products/lure/bodobodo/babytoman.jpg",
-      "/products/lure/bodobodo/firetiger.jpg",
-      "/products/lure/bodobodo/shad.jpg",
-      "/products/lure/bodobodo/yellowclown.jpg",
-      "/products/lure/bodobodo/ocw.jpg",
-      "/products/lure/bodobodo/whiteclown.jpg",
-      "/products/lure/bodobodo/goldfish.jpg",
+      "/products/lure/bodobodo/junior/size.JPG",
+      "/products/lure/bodobodo/junior/variant.JPG",
+      "/products/lure/bodobodo/junior/babytoman.JPG",
+      "/products/lure/bodobodo/junior/firetiger.JPG",
+      "/products/lure/bodobodo/junior/shad.JPG",
+      "/products/lure/bodobodo/junior/yellowclown.JPG",
+      "/products/lure/bodobodo/junior/ocw.JPG",
+      "/products/lure/bodobodo/junior/whiteclown.JPG",
+      "/products/lure/bodobodo/junior/goldfish.JPG",
+      "/products/lure/bodobodo/junior/desc.JPG",
     ],
 
     specs: [

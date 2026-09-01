@@ -13,10 +13,12 @@ const line = [
   description:
     "An X8-strand braided fishing line engineered with a premium fluorine coating for smooth casting, superior abrasion resistance and long-lasting performance.",
 
-  image: "/products/line/tempur/main.jpg",
+  image: "/products/line/tempur/tempur.JPG",
 
   gallery: [
-    "/products/line/tempur/marking.jpg",
+    "/products/line/tempur/1.JPG",
+    "/products/line/tempur/size.JPG",
+    "/products/line/tempur/variant.JPG",
   ],
 
   colours: [
@@ -110,10 +112,12 @@ const line = [
 
   tagline: "100% Premium Fluorocarbon Leader",
 
-  image: "/products/line/halimunan/main.jpg",
+  image: "/products/line/halimunan/halimunan.JPG",
 
   gallery: [
-    "/products/line/halimunan/halimunan.jpg",
+    "/products/line/halimunan/1.JPG",
+    "/products/line/halimunan/2.JPG",
+    "/products/line/halimunan/3.JPG",
   ],
 
   description:

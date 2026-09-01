@@ -10,12 +10,12 @@ const products = [
 
   tagline: "Power Meets Precision",
 
-  image: "/products/rod/adikara/adikara.png",
+  image: "/products/rod/adikara/adikara.JPG",
 
   gallery: [
-    "/products/rod/adikara/adikara.png",
-    "/products/rod/adikara/adikara.png",
-    "/products/rod/adikara/adikara.png",
+    "/products/rod/adikara/1.JPG",
+    "/products/rod/adikara/2.JPG",
+    "/products/rod/adikara/3.JPG",
   ],
 
   description:
@@ -107,12 +107,12 @@ const products = [
 
   tagline: "Light. Compact. Responsive. Robust.",
 
-  image: "/products/rod/blackheart/blackheart.png",
+  image: "/products/rod/blackheart/blackheart.JPG",
 
   gallery: [
-    "/products/rod/blackheart/blackheart.png",
-    "/products/rod/blackheart/blackheart.png",
-    "/products/rod/blackheart/blackheart.png",
+    "/products/rod/blackheart/1.JPG",
+    "/products/rod/blackheart/2.JPG",
+    "/products/rod/blackheart/3.JPG",
   ],
 
   description:
@@ -347,12 +347,12 @@ const products = [
 
   tagline: "Trust Your Heart",
 
-  image: "/products/rod/blackheartv2/blackheartv2.png",
+  image: "/products/rod/blackheartv2/blackheartv2.JPG",
 
   gallery: [
-    "/products/rod/blackheartv2/blackheartv2.png",
-    "/products/rod/blackheartv2/blackheartv2.png",
-    "/products/rod/blackheartv2/blackheartv2.png",
+    "/products/rod/blackheartv2/1.JPG",
+    "/products/rod/blackheartv2/2.JPG",
+    "/products/rod/blackheartv2/3.JPG",
   ],
 
   description:
@@ -452,12 +452,12 @@ const products = [
 
   tagline: "Break The Norms",
 
-  image: "/products/rod/defy/defy.png",
+  image: "/products/rod/defy/defy.JPG",
 
   gallery: [
-    "/products/rod/defy/defy.png",
-    "/products/rod/defy/defy.png",
-    "/products/rod/defy/defy.png",
+    "/products/rod/defy/1.JPG",
+    "/products/rod/defy/2.JPG",
+    "/products/rod/defy/3.JPG",
   ],
 
   description:
@@ -522,12 +522,12 @@ const products = [
 
   tagline: "Capture Your Trophy",
 
-  image: "/products/rod/capture/capture.png",
+  image: "/products/rod/capture/capture.JPG",
 
   gallery: [
-    "/products/rod/capture/capture.png",
-    "/products/rod/capture/capture.png",
-    "/products/rod/capture/capture.png",
+    "/products/rod/capture/1.JPG",
+    "/products/rod/capture/2.JPG",
+    "/products/rod/capture/3.JPG",
   ],
 
   description:
@@ -636,12 +636,12 @@ const products = [
 
   tagline: "One Cast One Move",
 
-  image: "/products/rod/move/move.png",
+  image: "/products/rod/move/mainmove.JPG",
 
   gallery: [
-    "/products/rod/move/move.png",
-    "/products/rod/move/move.png",
-    "/products/rod/move/move.png",
+    "/products/rod/move/1.JPG",
+    "/products/rod/move/2.JPG",
+    "/products/rod/move/3.JPG",
   ],
 
   description:
@@ -706,12 +706,13 @@ const products = [
 
   tagline: "Decode The Enigma",
 
-  image: "/products/rod/enigma/enigma.png",
+  image: "/products/rod/enigma/enigma.JPG",
 
   gallery: [
     
-    "/products/rod/enigma/enigma1.jpg",
-    "/products/rod/enigma/enigma2.jpg",
+    "/products/rod/enigma/1.JPG",
+    "/products/rod/enigma/2.JPG",
+    "/products/rod/enigma/3.JPG",
   ],
 
   description:

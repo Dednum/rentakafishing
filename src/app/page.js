@@ -7,6 +7,7 @@ import ChooseSection from "@/components/ChooseSection";
 import GallerySection from "@/components/GallerySection";
 import FishingExpert from "@/components/FishingExpert";
 import ContactSection from "@/components/ContactSection";
+import AwardSection from "@/components/AwardSection";
 import FadeScale from "@/components/animations/FadeScale";
 import FadeUp from "@/components/animations/FadeUp";
 import { Anton } from "next/font/google";
@@ -216,6 +217,11 @@ export default function Home() {
             ))}
             </div>
         </div>
+      </section>
+
+      {/* Feature Section */}
+      <section className="w-full   bg-black py-5">
+        <AwardSection/>
       </section>
 
       {/* Feature Section */}

@@ -2,6 +2,12 @@ export default function ProductSpecs({
   specs,
   selectedSize,
 }) {
+    const measurements = [
+    { label: "Length", key: "length" },
+    { label: "Chest", key: "chest" },
+    { label: "Shoulder", key: "shoulder" },
+    { label: "Sleeve", key: "sleeve" },
+  ];
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white">
 
@@ -33,33 +39,25 @@ export default function ProductSpecs({
 
       {selectedSize?.length && (
         <>
-          <div className="flex justify-between px-6 py-4 border-t border-gray-100">
-            <span className="text-gray-500">Length</span>
-            <span className="font-semibold text-[#D91E18]">
-              {selectedSize.length} cm
-            </span>
-          </div>
+          {measurements.map(({ label, key }) => {
+            // Jangan render measurement yang tak ada dalam data
+            if (selectedSize[key] == null) return null;
 
-          <div className="flex justify-between px-6 py-4 border-t border-gray-100">
-            <span className="text-gray-500">Chest</span>
-            <span className="font-semibold text-[#D91E18]">
-              {selectedSize.chest} cm
-            </span>
-          </div>
+            return (
+              <div
+                key={key}
+                className="flex justify-between px-6 py-4 border-t border-gray-100"
+              >
+                <span className="text-gray-500">
+                  {label}
+                </span>
 
-          <div className="flex justify-between px-6 py-4 border-t border-gray-100">
-            <span className="text-gray-500">Shoulder</span>
-            <span className="font-semibold text-[#D91E18]">
-              {selectedSize.shoulder} cm
-            </span>
-          </div>
-
-          <div className="flex justify-between px-6 py-4 border-t border-gray-100">
-            <span className="text-gray-500">Sleeve</span>
-            <span className="font-semibold text-[#D91E18]">
-              {selectedSize.sleeve} cm
-            </span>
-          </div>
+                <span className="font-semibold text-[#D91E18]">
+                  {selectedSize[key]}{selectedSize.unit}
+                </span>
+              </div>
+            );
+          })}
         </>
       )}
 
