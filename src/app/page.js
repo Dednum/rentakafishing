@@ -218,11 +218,12 @@ export default function Home() {
             </div>
         </div>
       </section>
+      
 
-      {/* Feature Section */}
-      <section className="w-full   bg-black py-5">
+      {/* Award Section */}
+
         <AwardSection/>
-      </section>
+
 
       {/* Feature Section */}
       <section className="w-full  py-5">

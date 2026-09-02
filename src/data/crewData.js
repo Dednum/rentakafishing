@@ -27,7 +27,7 @@ const crew = [
     id: 5,
     name: "KHIR",
     role: "Freshwater Specialist",
-    image: "/crew/5.jpg",
+    image: "/crew/shr.png",
   },
   {
     id: 6,

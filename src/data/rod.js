@@ -14,8 +14,8 @@ const products = [
 
   gallery: [
     "/products/rod/adikara/1.JPG",
-    "/products/rod/adikara/2.JPG",
     "/products/rod/adikara/3.JPG",
+    "/products/rod/adikara/2.JPG",
   ],
 
   description:
@@ -111,8 +111,8 @@ const products = [
 
   gallery: [
     "/products/rod/blackheart/1.JPG",
-    "/products/rod/blackheart/2.JPG",
     "/products/rod/blackheart/3.JPG",
+    "/products/rod/blackheart/2.JPG",
   ],
 
   description:
@@ -351,8 +351,8 @@ const products = [
 
   gallery: [
     "/products/rod/blackheartv2/1.JPG",
-    "/products/rod/blackheartv2/2.JPG",
     "/products/rod/blackheartv2/3.JPG",
+    "/products/rod/blackheartv2/2.JPG",
   ],
 
   description:
@@ -456,8 +456,8 @@ const products = [
 
   gallery: [
     "/products/rod/defy/1.JPG",
-    "/products/rod/defy/2.JPG",
     "/products/rod/defy/3.JPG",
+    "/products/rod/defy/2.JPG",
   ],
 
   description:
@@ -526,8 +526,8 @@ const products = [
 
   gallery: [
     "/products/rod/capture/1.JPG",
-    "/products/rod/capture/2.JPG",
     "/products/rod/capture/3.JPG",
+    "/products/rod/capture/2.JPG",
   ],
 
   description:
@@ -640,8 +640,8 @@ const products = [
 
   gallery: [
     "/products/rod/move/1.JPG",
-    "/products/rod/move/2.JPG",
     "/products/rod/move/3.JPG",
+    "/products/rod/move/2.JPG",
   ],
 
   description:
@@ -711,8 +711,8 @@ const products = [
   gallery: [
     
     "/products/rod/enigma/1.JPG",
-    "/products/rod/enigma/2.JPG",
     "/products/rod/enigma/3.JPG",
+    "/products/rod/enigma/2.JPG",
   ],
 
   description:

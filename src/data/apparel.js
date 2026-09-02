@@ -28,8 +28,8 @@ const apparel = [
 
         gallery: [
     "/products/apparel/windbreaker/1.JPG",
-    "/products/apparel/windbreaker/2.JPG",
     "/products/apparel/windbreaker/3.JPG",
+    "/products/apparel/windbreaker/2.JPG",
         ],
 
         specifications: [
@@ -142,8 +142,8 @@ const apparel = [
 
       gallery: [
         "/products/apparel/enigma/1.JPG",
-        "/products/apparel/enigma/2.JPG",
         "/products/apparel/enigma/3.JPG",
+        "/products/apparel/enigma/2.JPG",
       ],
 
       specifications: [
@@ -234,7 +234,7 @@ const apparel = [
   slug: "move-jersey",
   category: "outfit",
 
-  name: "Rentaka Move Fishing Jersey",
+  name: "Rentaka Move Jersey",
 
   tagline: "One Cast. One Move.",
 
@@ -249,8 +249,8 @@ const apparel = [
 
       gallery: [
         "/products/apparel/move/1.JPG",
-        "/products/apparel/move/2.JPG",
         "/products/apparel/move/3.JPG",
+        "/products/apparel/move/2.JPG",
       ],
 
       specifications: [
@@ -379,8 +379,8 @@ const apparel = [
       gallery: [
         "/products/apparel/cap2026/flatbrim.jpg",
         "/products/apparel/cap2026/1.JPG",
-        "/products/apparel/cap2026/2.JPG",
         "/products/apparel/cap2026/3.JPG",
+        "/products/apparel/cap2026/2.JPG",
       ],
 
       specifications: [
@@ -411,8 +411,8 @@ const apparel = [
       gallery: [
         "/products/apparel/cap2026/trucker.jpg",
         "/products/apparel/cap2026/1.JPG",
-        "/products/apparel/cap2026/2.JPG",
         "/products/apparel/cap2026/3.JPG",
+        "/products/apparel/cap2026/2.JPG",
       ],
 
       specifications: [

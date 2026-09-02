@@ -4,13 +4,13 @@ const line = [
 
   category: "lure",
 
-  slug: "bodobodo",
+  slug: "bodobodomn",
 
-  name: "Bodobodo",
+  name: "Bodobodo Mini",
 
-  tagline: "Mini & Junior Vibration Metal Bait",
+  tagline: "Mini Vibration Metal Bait",
 
-  image: "/products/lure/bodobodo/main.jpg",
+  image: "/products/lure/bodobodo/mainmn.JPG",
 
   description:
     "A vibration metal bait designed for long-distance casting and rapid sinking to reach strike zones quickly. Suitable for rivers, lakes and offshore waters, Bodobodo is available in Mini and Junior sizes to target a wide range of predatory fish.",
@@ -21,6 +21,7 @@ variants: [
     name: "Mini",
 
     gallery: [
+      "/products/lure/bodobodo/mini/desc.JPG",
       "/products/lure/bodobodo/mini/size.JPG",
       "/products/lure/bodobodo/mini/variant.JPG",
       "/products/lure/bodobodo/mini/babytoman.JPG",
@@ -30,7 +31,7 @@ variants: [
       "/products/lure/bodobodo/mini/ocw.JPG",
       "/products/lure/bodobodo/mini/whiteclown.JPG",
       "/products/lure/bodobodo/mini/goldfish.JPG",
-      "/products/lure/bodobodo/mini/desc.JPG",
+
     ],
 
     specs: [
@@ -41,12 +42,31 @@ variants: [
       { label: "Blade Height", value: "10 mm" },
     ],
   },
+]
+},
+{
+  id: 2,
 
+  category: "lure",
+
+  slug: "bodobodojr",
+
+  name: "Bodobodo Junior",
+
+  tagline: "Junior Vibration Metal Bait",
+
+  image: "/products/lure/bodobodo/mainjr.JPG",
+
+  description:
+    "A vibration metal bait designed for long-distance casting and rapid sinking to reach strike zones quickly. Suitable for rivers, lakes and offshore waters, Bodobodo is available in Mini and Junior sizes to target a wide range of predatory fish.",
+
+variants: [
   {
     id: 2,
     name: "Junior",
 
     gallery: [
+      "/products/lure/bodobodo/junior/desc.JPG",
       "/products/lure/bodobodo/junior/size.JPG",
       "/products/lure/bodobodo/junior/variant.JPG",
       "/products/lure/bodobodo/junior/babytoman.JPG",
@@ -56,7 +76,6 @@ variants: [
       "/products/lure/bodobodo/junior/ocw.JPG",
       "/products/lure/bodobodo/junior/whiteclown.JPG",
       "/products/lure/bodobodo/junior/goldfish.JPG",
-      "/products/lure/bodobodo/junior/desc.JPG",
     ],
 
     specs: [

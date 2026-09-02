@@ -17,8 +17,8 @@ const line = [
 
   gallery: [
     "/products/line/tempur/1.JPG",
-    "/products/line/tempur/size.JPG",
     "/products/line/tempur/variant.JPG",
+    "/products/line/tempur/size.JPG",
   ],
 
   colours: [
@@ -116,8 +116,8 @@ const line = [
 
   gallery: [
     "/products/line/halimunan/1.JPG",
-    "/products/line/halimunan/2.JPG",
     "/products/line/halimunan/3.JPG",
+    "/products/line/halimunan/2.JPG",
   ],
 
   description:

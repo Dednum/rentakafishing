@@ -17,11 +17,7 @@ const line = [
     "/products/terminal/duri/2.webp",
     "/products/terminal/duri/3.webp",
     "/products/terminal/duri/4.webp",
-    "/products/terminal/duri/size8.webp",
-    "/products/terminal/duri/size6.webp",
-    "/products/terminal/duri/size4.webp",
-    "/products/terminal/duri/size2.webp",
-    "/products/terminal/duri/size10.webp",
+
   ],
 
   description:
@@ -31,6 +27,7 @@ const line = [
   {
     id: 1,
     name: "#8",
+    images:"/products/terminal/duri/size8.webp",
     specs: [
       { label: "Hook Size", value: "#8" },
       { label: "A", value: "16.54 mm" },
@@ -43,6 +40,7 @@ const line = [
   {
     id: 2,
     name: "#6",
+    images:"/products/terminal/duri/size6.webp",
     specs: [
       { label: "Hook Size", value: "#6" },
       { label: "A", value: "17.88 mm" },
@@ -55,6 +53,7 @@ const line = [
   {
     id: 3,
     name: "#4",
+    images:"/products/terminal/duri/size4.webp",
     specs: [
       { label: "Hook Size", value: "#4" },
       { label: "A", value: "20.80 mm" },
@@ -67,6 +66,7 @@ const line = [
   {
     id: 4,
     name: "#2",
+    images:"/products/terminal/duri/size2.webp",
     specs: [
       { label: "Hook Size", value: "#2" },
       { label: "A", value: "23.07 mm" },
@@ -79,6 +79,7 @@ const line = [
   {
     id: 5,
     name: "#1",
+    images:"/products/terminal/duri/size1.JPG",
     specs: [
       { label: "Hook Size", value: "#1" },
       { label: "A", value: "25.06 mm" },
@@ -91,6 +92,7 @@ const line = [
   {
     id: 6,
     name: "#1/0",
+    images:"/products/terminal/duri/size10.webp",
     specs: [
       { label: "Hook Size", value: "#1/0" },
       { label: "A", value: "27.48 mm" },

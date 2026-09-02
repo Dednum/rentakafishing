@@ -21,12 +21,14 @@ export default function ProductInfo({ product }) {
     product.colours?.[0] ?? null
   );
 
-  const displayImages =
+const displayImages =
   product.colours?.length > 0 && selectedColour
     ? [
         selectedColour.image,
         ...(product.gallery ?? []),
       ]
+    : selectedVariant?.images
+    ? [selectedVariant.images, ...(product.gallery ?? [])]
     : selectedVariant?.gallery?.length > 0
     ? selectedVariant.gallery
     : product.gallery?.length > 0
