@@ -51,7 +51,7 @@ const crew = [
     id: 9,
     name: "MALIK ALI",
     role: "Crew",
-    image: "/crew/Malek Ali.JPG",
+    image: "/crew/MalekAli.JPG",
   },
     {
     id: 10,
