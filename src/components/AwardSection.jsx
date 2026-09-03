@@ -40,7 +40,7 @@ const igfaAnglers = [
   },
 ];
   return (
-    <section className="relative overflow-hidden bg-white py-20 text-black">
+    <section className="relative overflow-hidden bg-white/90 py-20 text-black backdrop-blur-sm">
 
       {/* Background texture */}
       <div className="absolute ">
@@ -53,8 +53,8 @@ const igfaAnglers = [
       </div>
 
       {/* Red glow / accent */}
-      <div className="absolute -right-40 top-20 h-96 w-96 rounded-full bg-red-600/20 blur-3xl" />
-      <div className="absolute -left-40 bottom-0 h-80 w-80 rounded-full bg-red-600/10 blur-3xl" />
+      <div className="absolute -right-40 top-20 h-86 w-96 rounded-full bg-red-600/20 blur-2xl" />
+      <div className="absolute -left-40 bottom-80 h-80 w-100 rounded-full bg-red-600/10 blur-2xl" />
 
       <div className="relative mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-8">
 
@@ -86,7 +86,7 @@ const igfaAnglers = [
 
 
           {/* ================= IGFA ================= */}
-          <div className="group/igfa relative overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 p-6 transition duration-500 hover:border-red-600/60 sm:p-8">
+          <div className="group/igfa relative overflow-hidden rounded-3xl border border-white/10 bg-white p-6 transition duration-500 hover:border-red-600/60 sm:p-8">
 
             {/* Red corner */}
             <div className="absolute right-0 top-0 h-24 w-24 bg-red-600/10 blur-2xl transition duration-500 group-hover/igfa:bg-red-600/20" />
@@ -97,15 +97,15 @@ const igfaAnglers = [
               <div className="mb-8 flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
 
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-[0.3em] text-red-500">
+                  <p className="text-sm font-bold uppercase tracking-[0.3em] text-black">
                     International Recognition
                   </p>
 
-                  <h3 className="mt-2 text-3xl text-gray-300 uppercase italic sm:text-4xl">
+                  <h3 className="mt-2 text-3xl text-gray-500 uppercase italic sm:text-4xl font-bold">
                     IGFA
                   </h3>
 
-                  <p className="mt-1 text-xl font-medium text-white">
+                  <p className="mt-1 text-xl font-medium text-red-500">
                     International Game Fish Association
                   </p>
                 </div>
@@ -136,7 +136,7 @@ const igfaAnglers = [
 
 
           {/* ================= MGDA ================= */}
-          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 p-6 transition duration-500 hover:border-red-600/60 sm:p-8">
+          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white p-6 transition duration-500 hover:border-red-600/60 sm:p-8">
 
             {/* Background red shape */}
             <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-red-600/10 blur-3xl transition duration-500 group-hover:bg-red-600/20" />
@@ -146,15 +146,15 @@ const igfaAnglers = [
               <div className="mb-8 flex items-start justify-between">
 
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-[0.3em] text-red-500">
+                  <p className="text-sm font-bold uppercase tracking-[0.3em] text-black">
                     National Recognition
                   </p>
 
-                  <h3 className="mt-2 text-3xl text-gray-300 uppercase italic sm:text-4xl">
+                  <h3 className="mt-2 text-3xl text-gray-500 uppercase italic sm:text-4xl font-bold">
                     MGDA
                   </h3>
 
-                  <p className="mt-1 text-xl font-medium text-white">
+                  <p className="mt-1 text-xl font-medium text-red-500">
                     Malaysia Good Design Award
                   </p>
                 </div>
@@ -178,7 +178,7 @@ const igfaAnglers = [
                 <div className="space-y-2">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
                     <Image
-                      src="/award/mgda/1.jpg"
+                      src="/award/mgda/11.jpg"
                       alt="Rentaka Blackheart"
                       fill
                       className="object-cover"
@@ -187,7 +187,7 @@ const igfaAnglers = [
 
                   <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
                     <Image
-                      src="/award/mgda/2.jpg"
+                      src="/award/mgda/41.jpg"
                       alt="Rentaka Blackheart"
                       fill
                       className="object-cover"
@@ -200,7 +200,7 @@ const igfaAnglers = [
                 <div className="space-y-2 pt-6">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
                     <Image
-                      src="/award/mgda/5.jpg"
+                      src="/award/mgda/51.jpg"
                       alt="Rentaka Blackheart"
                       fill
                       className="object-cover"
@@ -209,7 +209,7 @@ const igfaAnglers = [
 
                   <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
                     <Image
-                      src="/award/mgda/6.jpg"
+                      src="/award/mgda/61.jpg"
                       alt="Rentaka Blackheart"
                       fill
                       className="object-cover"
@@ -222,7 +222,7 @@ const igfaAnglers = [
                 <div className="space-y-2">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
                     <Image
-                      src="/award/mgda/3.jpg"
+                      src="/award/mgda/31.jpg"
                       alt="Rentaka Blackheart"
                       fill
                       className="object-cover"
@@ -231,7 +231,7 @@ const igfaAnglers = [
 
                   <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
                     <Image
-                      src="/award/mgda/4.jpg"
+                      src="/award/mgda/21.jpg"
                       alt="Rentaka Blackheart"
                       fill
                       className="object-cover"
@@ -242,7 +242,7 @@ const igfaAnglers = [
             </div>
             {/* Winner */}
             <a
-              href="/awards/mgda/blackheart"
+              href="/awards/mgda"
               className="
                 group/mgda-winner
                 relative
@@ -279,7 +279,7 @@ const igfaAnglers = [
                   and premium identity in fishing equipment.
                 </p>
 
-                {/* View Details - muncul bila hover
+                {/* View Details - muncul bila hover*/}
                 <div
                   className="
                     mt-0
@@ -296,7 +296,7 @@ const igfaAnglers = [
                   <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500">
                     View Details →
                   </span>
-                </div> */}
+                </div> 
 
               </div>
             </a>
@@ -349,7 +349,7 @@ function AwardPerson({
         overflow-hidden
         rounded-2xl
         border border-white/10
-        bg-zinc-900
+        bg-white
         transition-all
         duration-500
         hover:border-red-600/60
@@ -399,7 +399,7 @@ function AwardPerson({
             justify-center
             rounded-lg
             border border-red-500/70
-            bg-black/70
+            bg-white
             text-xs
             font-black
             text-red-500

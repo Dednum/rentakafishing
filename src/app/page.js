@@ -53,10 +53,9 @@ export default function Home() {
         bg-fixed
         bg-cover
         bg-center
+        bg-white-100
       "
-      style={{
-        backgroundImage: "url('/background.jpg')"
-      }}
+
     >
 
       {/* Hero Section */}
@@ -226,14 +225,14 @@ export default function Home() {
 
 
       {/* Feature Section */}
-      <section className="w-full  py-5">
+
         <FeatureProduct products={featureProducts}/>
-      </section>
+
 
       {/*whychoose section*/}
-      <section className="w-full bg-white py-5">
+
         <ChooseSection />
-      </section>
+
 
       {/*Gallery Section*/}
       <section className="w-full bg-black py-5" >

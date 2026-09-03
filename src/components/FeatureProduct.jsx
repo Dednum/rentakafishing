@@ -6,7 +6,7 @@ import FadeScale from "./animations/FadeScale";
 export default function FeatureProduct({ products }) {
 
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20 bg-white/90">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -18,7 +18,7 @@ export default function FeatureProduct({ products }) {
               Featured Collection
             </h2>
 
-            <p className="text-500 mt-3">
+            <p className="text-500 mt-3 text-gray-500">
               Discover our best seller and latest fishing equipment.
             </p>
 

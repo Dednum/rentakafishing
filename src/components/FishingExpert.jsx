@@ -46,7 +46,7 @@ export default function FishingExpert() {
   return (
     <section
       id="crew"
-      className="bg-[#081B1E] text-white py-24 overflow-hidden"
+      className="bg-black text-white py-24 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6">
 
@@ -310,7 +310,7 @@ export default function FishingExpert() {
                 h-full
                 w-24
                 bg-gradient-to-r
-                from-[#081B1E]
+
                 to-transparent
                 z-20
                 "
@@ -327,7 +327,6 @@ export default function FishingExpert() {
                 h-full
                 w-24
                 bg-gradient-to-l
-                from-[#081B1E]
                 to-transparent
                 z-20
                 "

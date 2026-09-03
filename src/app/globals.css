@@ -104,3 +104,7 @@ html {
 .leaflet-bottom {
     z-index: 2 !important;
 }
+
+.font-audiowide {
+  font-family: var(--font-audiowide);
+}

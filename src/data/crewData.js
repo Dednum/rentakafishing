@@ -27,7 +27,7 @@ const crew = [
     id: 5,
     name: "KHIR",
     role: "Freshwater Specialist",
-    image: "/crew/shr.png",
+    image: "/crew/Khirfirdaus.JPG",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const crew = [
     id: 8,
     name: "TOTET",
     role: "Crew",
-    image: "/crew/shr.png",
+    image: "/crew/Totet.JPG",
   },
     {
     id: 9,

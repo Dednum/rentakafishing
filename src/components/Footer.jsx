@@ -1,22 +1,30 @@
+"use client";
 import Image from "next/image";
 import { FaWhatsapp, FaFacebookF, FaTiktok } from "react-icons/fa";
 import social from "@/data/social";
 import FadeUp from "./animations/FadeUp";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+    const pathname = usePathname();
+
+  const hideTopImage =
+    pathname === "/awards/mgda";
+
   return (
     
 
 
 <footer className="w-full">
 
-  {/* Top Divider */}
+{/* Top Divider */}
+{!hideTopImage && (
   <img
     src="/footer1.JPG"
     alt=""
     className="w-full h-auto block"
   />
-
+)}
   {/* Footer */}
   <div className="bg-black text-white">
     <FadeUp>

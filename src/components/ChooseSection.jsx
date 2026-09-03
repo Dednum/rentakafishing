@@ -38,7 +38,7 @@ const reasons = [
 export default function ChooseSection() {
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white/90">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -85,7 +85,7 @@ export default function ChooseSection() {
                     rounded-2xl
                     border
                     border-gray-100
-                    bg-white
+                   bg-[#D91E18]
                     shadow-sm
                     hover:shadow-xl
                     transition-all
@@ -103,8 +103,8 @@ export default function ChooseSection() {
                       items-center
                       justify-center
                       rounded-xl
-                      bg-[#D91E18]
-                      text-white
+                      bg-white
+                      text-[#D91E18]
                       mb-6
                       group-hover:scale-110
                       transition
@@ -118,7 +118,7 @@ export default function ChooseSection() {
                     className="
                       text-xl
                       font-semibold
-                      text-gray-900
+                      text-white
                       mb-3
                     "
                   >
@@ -128,7 +128,7 @@ export default function ChooseSection() {
                   {/* Description */}
                   <p
                     className="
-                      text-gray-500
+                      text-gray-250
                       leading-relaxed
                     "
                   >
