@@ -486,6 +486,58 @@ const stores = [
         lng: 100.53780182475673,
       },
     },
+    
+    {
+      id: 25,
+      name: "Eco Fishing Tackle",
+      country: "Malaysia",
+      state: "Kedah",
+      city: "Alor Setar",
+      address: "No. 16, Tingkat Bawah, Kompleks Sukan Hijau Kuning, Jalan Sungai Korok, Lebuhraya Sultan Abdul Halim, 05400 Alor Setar, Kedah",
+      contact: {
+        person: "",
+        phone: "047712828",
+        whatsapp: "60162269828",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/n7BRBr7QkM4igWwc8",
+        lat: 6.107627858776654, 
+        lng: 100.36454212024312
+      },
+    },
+    
+    {
+      id: 26,
+      name: "Northern Pro Tackle sdn bhd",
+      country: "Malaysia",
+      state: "Pulau Pinang",
+      city: "Perai",
+      address: "64, Jln Kurau, Chai Leng Park, 13700 Perai, Pulau Pinang",
+      contact: {
+        person: "",
+        phone: "0124100766",
+        whatsapp: "60124100766",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/fySqrJSnbvDV3PVm7",
+        lat: 5.385403803668306,   
+        lng: 100.39345449325229,
+      },
+    },
   
     {
       id: 20,
@@ -615,6 +667,33 @@ const stores = [
         lng: 114.9554423689309,
       },
     },
+    
+    {
+      id: 27,
+      name: "Randi Fishing Tackle Sekadau",
+      country: "Indonesia",
+      state: "Kalimantan Barat",
+      city: "Kabupaten Sekadau",
+      address: "2V9V+3J9, Jl. Merdeka Timur, Mungguk, Kec. Sekadau Hilir, Kabupaten Sekadau, Kalimantan Barat 79516, Indonesia",
+      contact: {
+        person: "",
+        phone: "+6285845469616",
+        whatsapp: "+6285845469616",
+      },
+      socials: {
+        website: "",
+        shopee: "",
+        facebook: "",
+        instagram: "",
+        tiktok: "",
+      },
+      location: {
+        googleMaps: "https://maps.app.goo.gl/WxfCFEaRAAoVD2iN7",
+        lat: 4.945497795241037, 
+        lng: 114.9554423689309,
+      },
+    },
   ];
+  
   
   export default stores;

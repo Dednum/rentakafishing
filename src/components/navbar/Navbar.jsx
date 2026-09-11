@@ -38,6 +38,7 @@ const storeMenu = Object.values(
     return acc;
   }, {})
 );
+console.log("STORE MENU:", storeMenu);
 
   const [open, setOpen] = useState(false);
 
