@@ -18,8 +18,8 @@ export default function WhatsAppButton() {
     right-6
     z-50
     flex
-    h-24
-    w-24
+    h-16
+    w-16
     items-center
     justify-center
     rounded-full
@@ -34,7 +34,7 @@ export default function WhatsAppButton() {
   <img
     src="/logo/ws.png"
     alt="WhatsApp"
-    className="relative z-10 h-24 w-24"
+    className="relative z-10 h-16 w-16"
   />
 </a>
   );
