@@ -8,25 +8,25 @@ const crew = [
   {
     id: 2,
     name: "AMZARI",
-    role: "Saltwater Specialist",
+    role: "CFO",
     image: "/crew/Amzari.JPG",
   },
   {
     id: 3,
     name: "AMEY YAZID",
-    role: "Casting Expert",
+    role: "Manager",
     image: "/crew/Amey Yazid.JPG",
   },
   {
     id: 4,
     name: "ZAMPOTATO",
-    role: "Guide",
+    role: "Crew",
     image: "/crew/Zampotato.JPG",
   },
   {
     id: 5,
     name: "KHIR",
-    role: "Freshwater Specialist",
+    role: "Crew",
     image: "/crew/Khirfirdaus.JPG",
   },
   {
@@ -50,7 +50,7 @@ const crew = [
     {
     id: 9,
     name: "MALIK ALI",
-    role: "Crew",
+    role: "Crew / Video Grapher",
     image: "/crew/MalekAli.JPG",
   },
     {
@@ -63,7 +63,7 @@ const crew = [
     {
     id: 11,
     name: "FARHAN",
-    role: "Crew",
+    role: "Crew / Designer",
     image: "/crew/Farhan.JPG",
   },
     {
@@ -75,7 +75,7 @@ const crew = [
     {
     id: 13,
     name: "JEBAT",
-    role: "Crew",
+    role: "Crew / Fishing Guide (Sarawak)",
     image: "/crew/Jebat.JPG",
   },
     {
@@ -93,7 +93,7 @@ const crew = [
     {
     id: 16,
     name: "EDY",
-    role: "Crew",
+    role: "Crew / Fishing Guide (Kedah)",
     image: "/crew/Edy.JPG",
   },
     {
@@ -105,19 +105,19 @@ const crew = [
     {
     id: 18,
     name: "KIMI",
-    role: "Crew",
+    role: "Crew / Fishing Guide (Gubir)",
     image: "/crew/18.jpg",
   },
     {
     id: 19,
     name: "PAPANG",
-    role: "Crew",
+    role: "Crew (SW)",
     image: "/crew/Papang.JPG",
   },
     {
     id: 20,
     name: "AIMAN GEDUH",
-    role: "Crew",
+    role: " Crew / Fishing Guide (Sabah)",
     image: "/crew/Aiman Geduh.JPG",
   },
     {
@@ -129,7 +129,7 @@ const crew = [
     {
     id: 22,
     name: "PAK OIL",
-    role: "Crew",
+    role: "Crew / Fishing Guide (kedah)",
     image: "/crew/Pak Oil.JPG",
   },
     {
@@ -147,13 +147,13 @@ const crew = [
     {
     id: 25,
     name: "AH RIEP",
-    role: "Crew",
+    role: "Crew / Fishing Guide (Sarawak)",
     image: "/crew/25.jpg",
   },
     {
     id: 26,
     name: "FAHANIF",
-    role: "Crew",
+    role: "Crew / Fishing Guide",
     image: "/crew/Fahanif.JPG",
   },
 ];
